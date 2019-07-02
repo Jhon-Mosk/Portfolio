@@ -1,0 +1,7 @@
+{
+    "css": {
+        "style" : [
+            "packages/bootstrap-3.4.1-dist/css/bootstrap.css.map"
+        ]
+    } 
+}
