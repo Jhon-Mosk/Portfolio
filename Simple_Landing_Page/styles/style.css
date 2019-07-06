@@ -1,9 +1,39 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .mainWrap {
   margin: auto;
   width: 1280px;
   height: 1000px;
   background: green;
+}
+header {
+  box-sizing: border-box;
+  position: relative;
+  padding: 50px;
+  height: 323px;
+  background-color: #445161;
+  color: #ffffff;
+}
+header h1 {
+  margin-bottom: 25px;
+  margin-top: -12px;
+  font-weight: 400;
+  font-size: 60px;
+}
+header ul {
+  padding-left: 30px;
+  font-size: 20px;
+  line-height: 36px;
+}
+header ul li {
+  list-style-image: url(../images/check_icon.png);
+}
+header img {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 469px;
+  height: 214px;
 }
