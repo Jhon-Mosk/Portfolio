@@ -40,15 +40,8 @@ section {
   padding: 50px;
 }
 .aboutProduct {
-  height: 496px;
+  padding-bottom: 67px;
   position: relative;
-}
-.aboutProduct h2 {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 36px;
-  color: #445161;
-  margin-top: -10px;
 }
 .aboutProduct p {
   font-size: 16px;
@@ -61,4 +54,42 @@ section {
   right: 50px;
   width: 430px;
   height: 245px;
+}
+.headline {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #445161;
+  margin-top: -10px;
+}
+.pluses {
+  background: #f5f5f5;
+}
+.pluses:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.pluses h2 {
+  text-align: center;
+}
+.pluses ul {
+  list-style: none;
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+}
+.pluses ul li {
+  margin-bottom: 27px;
+}
+.pluses .leftColumn {
+  float: left;
+  margin: 0;
+  background: url(../images/cross.jpg) no-repeat 0 6px, url(../images/cross.jpg) no-repeat 0 104px, url(../images/cross.jpg) no-repeat 0 204px;
+}
+.pluses .rightColumn {
+  float: right;
+  margin: 0;
+  background: url(../images/cross.jpg) no-repeat 0 6px, url(../images/cross.jpg) no-repeat 0 104px, url(../images/cross.jpg) no-repeat 0 204px;
+  padding-right: 22px;
 }
