@@ -43,6 +43,9 @@ section {
   padding-bottom: 67px;
   position: relative;
 }
+.aboutProduct h2 {
+  text-align: left;
+}
 .aboutProduct p {
   font-size: 16px;
   line-height: 24px;
@@ -61,35 +64,56 @@ section {
   line-height: 36px;
   color: #445161;
   margin-top: -10px;
+  text-align: center;
 }
-.pluses {
+.plus {
   background: #f5f5f5;
+  padding-bottom: 23px;
 }
-.pluses:after {
+.plus:after {
   content: '';
   clear: both;
   display: block;
 }
-.pluses h2 {
-  text-align: center;
-}
-.pluses ul {
+.plus ul {
   list-style: none;
   color: #333333;
   font-size: 16px;
   line-height: 24px;
 }
-.pluses ul li {
+.plus ul li {
   margin-bottom: 27px;
 }
-.pluses .leftColumn {
+.plus .leftColumn {
   float: left;
   margin: 0;
   background: url(../images/cross.jpg) no-repeat 0 6px, url(../images/cross.jpg) no-repeat 0 104px, url(../images/cross.jpg) no-repeat 0 204px;
 }
-.pluses .rightColumn {
+.plus .rightColumn {
   float: right;
   margin: 0;
   background: url(../images/cross.jpg) no-repeat 0 6px, url(../images/cross.jpg) no-repeat 0 104px, url(../images/cross.jpg) no-repeat 0 204px;
   padding-right: 22px;
+}
+.scrinshot .description {
+  float: left;
+  width: 50%;
+  margin-bottom: 4px;
+}
+.scrinshot img {
+  float: left;
+  padding-right: 16px;
+}
+.scrinshot h3 {
+  color: #445161;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  font-weight: 400;
+}
+.scrinshot p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 7px;
 }
