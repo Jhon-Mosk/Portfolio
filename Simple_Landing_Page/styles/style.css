@@ -135,6 +135,9 @@ section {
 }
 .review .description {
   margin-bottom: 32px;
+  background-image: url(../images/bg_review.svg);
+  background-repeat: no-repeat;
+  background-position: 89px 0;
 }
 .review img {
   border-radius: 50%;
@@ -151,6 +154,7 @@ section {
 .review .offset {
   padding-left: 17px;
   box-sizing: border-box;
+  background-position: 106px 0;
 }
 .review .signature {
   color: #989898;
