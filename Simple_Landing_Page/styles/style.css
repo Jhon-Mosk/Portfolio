@@ -219,3 +219,121 @@ section {
   width: 300px;
   height: 499px;
 }
+.contact {
+  background-color: #445161;
+}
+.contact:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.contact .headline {
+  color: #ffffff;
+  margin-top: -5px;
+}
+.contact .inputClientData {
+  width: 500px;
+  float: left;
+  padding-left: 200px;
+}
+.contact .inputClientData input {
+  width: 490px;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #445162;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.contact .inputClientData textarea {
+  height: 166px;
+  width: 486px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #445162;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  resize: none;
+  margin-bottom: 15px;
+}
+.contact .inputClientData button {
+  width: 140px;
+  height: 40px;
+  background-color: #ffffff;
+  margin-left: 180px;
+  border: none;
+  border-radius: 5px;
+  color: #445162;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.contact .socialContact {
+  width: 240px;
+  float: right;
+  padding-right: 194px;
+}
+.contact .socialContact ul {
+  list-style: none;
+  margin-top: 0px;
+  padding-left: 0;
+}
+.contact .socialContact ul .sprites {
+  height: 26px;
+  width: 26px;
+  padding-right: 3px;
+  float: left;
+}
+.contact .socialContact ul .sprites:nth-child(1) {
+  background: url(../images/sprites.png) no-repeat 0 0;
+}
+.contact .socialContact ul .sprites:nth-child(3) {
+  background: url(../images/sprites.png) no-repeat -50px 0;
+}
+.contact .socialContact ul .sprites:nth-child(5) {
+  background: url(../images/sprites.png) no-repeat 0 -50px;
+}
+.contact .socialContact ul .sprites:nth-child(7) {
+  background: url(../images/sprites.png) no-repeat -50px -50px;
+}
+.contact .socialContact ul li {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 19px;
+  line-height: 26px;
+}
+.contact .socialContact ul li:nth-child(2) {
+  margin-bottom: 20px;
+}
+.contact .socialContact ul li:nth-child(4) {
+  margin-bottom: 15px;
+}
+.contact .socialContact .flexWrapSocial {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.contact .socialContact .flexWrapSocial i {
+  height: 39px;
+  width: 39px;
+  font-size: 23px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  line-height: 39px;
+  box-sizing: border-box;
+  padding-left: 9px;
+}
+.contact .socialContact .flexWrapSocial .fab:nth-child(2) {
+  padding-left: 13px;
+}
+.contact .socialContact .flexWrapSocial .fab:nth-child(4) {
+  padding-left: 9px;
+}
+.contact .socialContact .flexWrapSocial .fab:nth-child(5) {
+  padding-left: 7px;
+}
