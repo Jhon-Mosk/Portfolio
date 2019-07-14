@@ -337,3 +337,10 @@ section {
 .contact .socialContact .flexWrapSocial .fab:nth-child(5) {
   padding-left: 7px;
 }
+.copyright {
+  height: 26px;
+  font-size: 12px;
+  color: #445162;
+  line-height: 26px;
+  text-align: center;
+}
