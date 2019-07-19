@@ -1,0 +1,64 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+.navbar.navbar-default {
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+  background: #ffffff;
+}
+.navbar.navbar-default .navbar-brand {
+  position: relative;
+  bottom: 2px;
+}
+.slider {
+  position: relative;
+}
+.slider .callBackFormWrap {
+  height: 45%;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 15%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .slider .callBackFormWrap {
+    height: 55%;
+    top: 25%;
+  }
+}
+.slider .callBackFormWrap form {
+  padding: 30px;
+}
+.slider .callBackFormWrap label {
+  color: #ffffff;
+  font-weight: 400;
+}
+.slider .callBackFormWrap label,
+.slider .callBackFormWrap input {
+  display: block;
+  width: 100%;
+}
+.slider .callBackFormWrap input[type="text"] {
+  margin-bottom: 20px;
+  outline: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ffffff;
+}
+.slider .callBackFormWrap input[type="text"]:focus {
+  border-bottom: 1px solid #8aff84;
+}
+.slider .callBackFormWrap input[type="submit"] {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: none;
+  padding: 20px;
+}
