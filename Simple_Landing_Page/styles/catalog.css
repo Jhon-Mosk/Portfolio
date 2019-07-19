@@ -21,9 +21,6 @@ body {
   position: absolute;
   right: 15%;
   top: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   border-radius: 5px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -61,4 +58,108 @@ body {
   border: 1px solid #ffffff;
   background: none;
   padding: 20px;
+}
+.mobileFormWrap {
+  height: 200px;
+  background: #f5f5f5;
+  clear: both;
+}
+@media (min-width: 0) and (max-width: 479px) {
+  .mobileFormWrap {
+    height: 300px;
+  }
+}
+.mobileFormWrap .mobileFormInsideWrap {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobileFormWrap .mobileFormInsideWrap form > div {
+  float: left;
+  height: 80px;
+  margin: 0 5px;
+}
+@media (min-width: 0) and (max-width: 479px) {
+  .mobileFormWrap .mobileFormInsideWrap form > div {
+    float: none;
+    height: auto;
+  }
+}
+.mobileFormWrap .mobileFormInsideWrap label {
+  color: #8a8a8a;
+  font-size: 2rem;
+}
+.mobileFormWrap .mobileFormInsideWrap input[type="text"] {
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #e2e2e2;
+  background: none;
+}
+.mobileFormWrap .mobileFormInsideWrap input[type="text"]:focus {
+  border-bottom: 2px solid #8aff84;
+  outline: none;
+}
+.mobileFormWrap .mobileFormInsideWrap input[type="submit"] {
+  color: #8a8a8a;
+  border: 2px solid #e2e2e2;
+  background: none;
+  padding: 17px;
+}
+.ourServicesHead {
+  padding: 100px 0;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .serviceCol {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .serviceCol:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 0) and (max-width: 479px) {
+  .serviceCol:nth-child(-n+3) {
+    margin-bottom: 20px;
+  }
+}
+.serviceCol .serviceUnit {
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.serviceCol .serviceUnit .serviceImg img {
+  width: 100%;
+}
+.serviceCol .serviceUnit .serviceName {
+  font-family: 'Merriweather', serif;
+  margin: 10px;
+  font-size: 2rem;
+}
+.serviceCol .serviceUnit .serviceDesc {
+  font-family: 'Lato', sans-serif;
+  color: #8a8a8a;
+  margin: 10px;
+  text-align: justify;
+}
+.serviceCol .serviceUnit .moreBtnWrap a {
+  border-top: 1px solid #e2e2e2;
+  background: #f5f5f5;
+  color: #8e8e8e;
+  font-size: 12px;
+  padding: 7px 25px;
+  text-transform: uppercase;
+  display: block;
+}
+.serviceCol .serviceUnit .moreBtnWrap a:hover {
+  text-decoration: none;
+  color: #e67c00;
 }
