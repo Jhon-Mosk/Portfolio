@@ -117,8 +117,6 @@ body {
   .serviceCol {
     width: 50%;
     float: left;
-    padding-right: 15px;
-    padding-left: 15px;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -162,4 +160,45 @@ body {
 .serviceCol .serviceUnit .moreBtnWrap a:hover {
   text-decoration: none;
   color: #e67c00;
+}
+.serviceReviewsHeader {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 36px;
+  padding: 100px 0;
+  text-align: center;
+  margin: 0;
+}
+.reviewUnitWrap .review {
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  overflow: hidden;
+}
+.reviewUnitWrap .review .reviewImgWrap img {
+  width: 100%;
+}
+.reviewUnitWrap .review .reviewAuthor {
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  margin-top: 15px;
+  text-align: center;
+}
+.reviewUnitWrap .review .reviewAuthor .reviewAuthorPosition {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #8a8a8a;
+  font-size: 0.7em;
+}
+.reviewUnitWrap .review .reviewAuthorSocials {
+  text-align: center;
+  font-size: 3.5rem;
+  letter-spacing: 10px;
+}
+.reviewUnitWrap .review .reviewAuthorSocials i {
+  color: #8a8a8a;
+}
+.reviewUnitWrap .review .reviewAuthorSocials i:hover {
+  color: #626262;
+  cursor: pointer;
 }

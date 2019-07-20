@@ -29,13 +29,15 @@ body {
         background: rgba(0, 0, 0, 0.5);
         position: absolute;
         right: 15%;
-        top: 30%;        
+        top: 30%;
         border-radius: 5px;
 
         .adaptive(992px, 1199px, {
             height: 55%;
             top: 25%;
-        });
+        }
+
+        );
 
         form {
             padding: 30px;
@@ -46,7 +48,8 @@ body {
             font-weight: 400;
         }
 
-        label, input {
+        label,
+        input {
             display: block;
             width: 100%;
         }
@@ -81,7 +84,9 @@ body {
 
     .adaptive(0, 479px, {
         height: 300px;
-    });
+    }
+
+    );
 
     .mobileFormInsideWrap {
 
@@ -90,7 +95,7 @@ body {
         justify-content: center;
         align-items: center;
 
-        & form > div {
+        & form>div {
             float: left;
             height: 80px;
             margin: 0 5px;
@@ -98,7 +103,9 @@ body {
             .adaptive(0, 479px, {
                 float: none;
                 height: auto;
-            });
+            }
+
+            );
         }
 
         label {
@@ -140,44 +147,48 @@ body {
     .adaptive(480px, 767px, {
         width: 50%;
         float: left;
-        padding-right: 15px;
-        padding-left: 15px;
-    });
+    }
+
+    );
 
     .adaptive(480px, 767px, {
-        &:nth-child(-n+2){
-        margin-bottom: 20px;
+        &:nth-child(-n+2) {
+            margin-bottom: 20px;
         }
-    });
+    }
+
+    );
 
     .adaptive(0, 479px, {
-        &:nth-child(-n+3){
-        margin-bottom: 20px;
+        &:nth-child(-n+3) {
+            margin-bottom: 20px;
         }
-    });
-    
+    }
+
+    );
+
     .serviceUnit {
         border: 1px solid #e2e2e2;
         border-radius: 5px;
         overflow: hidden;
-    
+
         .serviceImg img {
             width: 100%;
         }
-    
+
         .serviceName {
             font-family: 'Merriweather', serif;
             margin: 10px;
             font-size: 2rem;
         }
-    
+
         .serviceDesc {
             font-family: 'Lato', sans-serif;
             color: #8a8a8a;
             margin: 10px;
             text-align: justify;
         }
-    
+
         .moreBtnWrap a {
             border-top: 1px solid #e2e2e2;
             background: #f5f5f5;
@@ -186,10 +197,62 @@ body {
             padding: 7px 25px;
             text-transform: uppercase;
             display: block;
-    
+
             &:hover {
                 text-decoration: none;
                 color: #e67c00;
+            }
+        }
+    }
+}
+
+.serviceReviewsHeader {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding: 100px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.reviewUnitWrap {
+
+    .review {
+        border-radius: 5px;
+        border: 1px solid #e2e2e2;
+        overflow: hidden;
+
+        .reviewImgWrap img {
+            width: 100%;
+        }
+
+        .reviewAuthor {
+            font-size: 2rem;
+            font-family: 'Merriweather', serif;
+            margin-top: 15px;
+            text-align: center;
+
+            .reviewAuthorPosition {
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
+                font-style: italic;
+                color: #8a8a8a;
+                font-size: 0.7em;
+            }
+        }
+
+        .reviewAuthorSocials {
+            text-align: center;
+            font-size: 3.5rem;
+            letter-spacing: 10px;
+            
+            & i {
+                color: #8a8a8a;
+
+                &:hover {
+                    color: #626262;
+                    cursor: pointer;
+                }
             }
         }
     }
