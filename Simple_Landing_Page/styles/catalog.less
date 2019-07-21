@@ -216,22 +216,23 @@ body {
 }
 
 .reviewUnitWrap {
-
+    margin-bottom: 30px;    
+    
     .review {
         border-radius: 5px;
         border: 1px solid #e2e2e2;
         overflow: hidden;
-
+        
         .reviewImgWrap img {
             width: 100%;
         }
-
+        
         .reviewAuthor {
             font-size: 2rem;
             font-family: 'Merriweather', serif;
             margin-top: 15px;
             text-align: center;
-
+            
             .reviewAuthorPosition {
                 font-family: 'Lato', sans-serif;
                 font-weight: 300;
@@ -240,7 +241,7 @@ body {
                 font-size: 0.7em;
             }
         }
-
+        
         .reviewAuthorSocials {
             text-align: center;
             font-size: 3.5rem;
@@ -248,7 +249,7 @@ body {
             
             & i {
                 color: #8a8a8a;
-
+                
                 &:hover {
                     color: #626262;
                     cursor: pointer;
@@ -256,4 +257,119 @@ body {
             }
         }
     }
+    
+    .reviewServiceName {
+        font-size: 3rem;
+    }
+    
+    .reviewPost {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    
+    .reviewIndexes {
+        margin-top: 15px;
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
+        font-size: 1.9rem;
+        
+        .progress {
+            height: 8px;
+        }
+        
+        .progress-bar {
+            background-color: #8a8a8a;
+        }
+    }
+    
+    .helpful {
+        font-size: 2rem;
+        
+        span {
+            cursor: pointer;
+            position: relative;
+            top: 4px;
+        }
+        
+        .glyphicon-thumbs-up {
+            color: #e67c00;
+        }
+        
+        .glyphicon-thumbs-down {
+            color: #626262;
+        }
+    }
+}
+
+.officesWrap {
+    background: url(../images/offices.jpg) no-repeat center center, rgba(255, 255, 255, 0.8);
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding-bottom: 100px;
+
+    .ourOfficesHeader {
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
+        font-size: 36px;
+        margin: 100px 0;
+        text-align: center;
+    }
+
+    .addresses {
+        overflow: hidden;
+
+        .addressCol {
+
+            .adaptive(480px, 767px, {
+                width: 50%;
+                float: left;
+            });
+
+            .adaptive(480px, 767px, {
+                &:last-child{
+                    width: 100%;
+                }
+            });
+        }
+
+        .addressData {
+            padding: 15px;
+            background: #ffffff;
+        }
+
+        address {
+            color: #8a8a8a;
+            margin: 0;
+            padding: 10px 0;
+            
+            button {
+                width: 100%;
+                display: block;
+                padding: 10px 15px;
+                background: #f5f5f5;
+                border: none;
+                border-top: 1px solid #e2e2e2;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                color: #333;
+                text-align: left;
+
+                &:hover {
+                    color: #e67c00;
+                }
+            }
+        }
+
+        address img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+}
+
+footer {
+    background: #252a31;
+    color: #ffffff;
+    padding: 25px 15px;
 }
