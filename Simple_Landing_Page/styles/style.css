@@ -2,6 +2,11 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
 .navbar.navbar-default {
   margin-bottom: 0;
   border-radius: 0;
@@ -51,6 +56,11 @@ section {
 .aboutProduct {
   padding-bottom: 67px;
 }
+.aboutProduct:after {
+  content: '';
+  clear: both;
+  display: block;
+}
 .aboutProduct h2 {
   text-align: left;
 }
@@ -77,9 +87,11 @@ section {
   text-align: center;
   background: #f5f5f5;
 }
+._transparent {
+  background: none;
+}
 .plus {
   background: #f5f5f5;
-  padding-bottom: 23px;
 }
 .plus:after {
   content: '';
@@ -98,4 +110,110 @@ section {
   margin-bottom: 27px;
   text-align: justify;
   background: url(../images/cross.jpg) no-repeat 0 6px;
+}
+.screenshot {
+  padding-bottom: 56px;
+}
+.screenshot:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.screenshot img {
+  float: left;
+  padding-right: 16px;
+}
+@media (min-width: 0) and (max-width: 1199px) {
+  .screenshot img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.screenshot h3 {
+  color: #445161;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin: 0;
+  font-weight: 400;
+}
+@media (min-width: 0) and (max-width: 1199px) {
+  .screenshot h3 {
+    text-align: center;
+  }
+}
+.screenshot p {
+  color: #333333;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 7px;
+  text-align: justify;
+}
+.review {
+  background: #f5f5f5;
+}
+.review:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.review .descriptionReview {
+  margin-bottom: 32px;
+}
+.review .descriptionReview:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.review .descriptionReview .reviewBackground {
+  position: relative;
+  float: right;
+  width: 81%;
+  background: #ebebeb;
+  padding: 16px 16px 0 16px;
+  box-sizing: border-box;
+}
+.review .descriptionReview .reviewBackground::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 27px;
+  background: #ebebeb;
+  transform: rotate(45deg);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .review .descriptionReview .reviewBackground {
+    width: 75%;
+  }
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .review .descriptionReview .reviewBackground {
+    width: 100%;
+  }
+}
+.review img {
+  border-radius: 50%;
+  float: left;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .review img {
+    float: none;
+    display: block;
+    margin: 0 auto 32px;
+  }
+}
+.review p {
+  color: #333333;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+  text-align: justify;
+  margin-bottom: 8px;
+}
+.review .signature {
+  color: #989898;
+  font-size: 14px;
+  line-height: 18px;
 }
