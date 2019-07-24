@@ -1,3 +1,8 @@
+@font-face {
+    font-family: SocialIco;
+    src: url(../fonts/Socialico.ttf);
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -278,7 +283,9 @@ section {
 
     .adaptive(0, 991px, {
         display: block;
-    });
+    }
+
+    );
 
     article {
         background-color: #445161;
@@ -300,16 +307,20 @@ section {
         line-height: 2.4rem;
 
         li {
-            .adaptive(0, 767px, {            
+            .adaptive(0, 767px, {
                 margin: 15px auto;
-                width: 50%;         
-            }); 
+                width: 50%;
+            }
+
+            );
         }
-        
-        .adaptive(768px, 991px, {            
+
+        .adaptive(768px, 991px, {
             margin: 15px auto;
-            width: 50%;         
-        });
+            width: 50%;
+        }
+
+        );
     }
 
     article button {
@@ -329,14 +340,18 @@ section {
             margin: 0 auto;
             width: 50%;
             margin-bottom: 15px;
-        });
+        }
+
+        );
 
         .adaptive(0, 991px, {
             display: block;
             margin: 0 auto;
             width: 50%;
             margin-bottom: 15px;
-        });
+        }
+
+        );
     }
 
     .price {
@@ -363,21 +378,25 @@ section {
         .adaptive(992px, 1199px, {
             width: calc((100%/3)-3px);
             height: inherit;
-        });
+        }
+
+        );
 
         .adaptive(0, 991px, {
             width: 100%;
             margin-bottom: 50px;
             height: inherit;
             padding-bottom: 15px;
-        });
+        }
+
+        );
     }
 
     .premium {
         width: 300px;
         height: 404px;
         padding: 0;
-        
+
         &:after {
             content: '';
             clear: both;
@@ -387,14 +406,18 @@ section {
         .adaptive(992px, 1199px, {
             width: calc((100%/3)-3px);
             height: inherit;
-        });
+        }
+
+        );
 
         .adaptive(0, 991px, {
             width: 100%;
             margin-bottom: 50px;
-            height: inherit; 
-            padding-bottom: 15px;           
-        });
+            height: inherit;
+            padding-bottom: 15px;
+        }
+
+        );
     }
 
     .lux {
@@ -411,13 +434,193 @@ section {
         .adaptive(992px, 1199px, {
             width: calc((100%/3)-3px);
             height: inherit;
-        });
+        }
+
+        );
 
         .adaptive(0, 991px, {
             width: 100%;
             margin-bottom: 50px;
             height: inherit;
             padding-bottom: 15px;
-        });
+        }
+
+        );
     }
+}
+
+.contactStyle {
+    color: #ffffff;
+    margin-top: -5px;
+    background-color: #445161;
+}
+
+.contact {
+    background-color: #445161;
+
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    .inputClientData {
+        width: 500px;
+        float: left;
+        padding-left: 200px;
+
+        .adaptive(992px, 1199px, {
+            padding-left: 0;
+        }
+
+        );
+
+        .adaptive(0, 991px, {
+            padding-left: 0;
+            float: none;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        );
+
+        input {
+            width: 490px;
+            height: 40px;
+            padding-left: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            color: #445162;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+
+            .adaptive(0, 991px, {
+                width: 100%;
+            }
+    
+            );
+        }
+
+        textarea {
+            height: 166px;
+            width: 486px;
+            padding-left: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            color: #445162;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            resize: none;
+            margin-bottom: 15px;
+
+            .adaptive(0, 991px, {
+                width: 100%;
+            }
+    
+            );
+        }
+
+        button {
+            width: 140px;
+            height: 40px;
+            background-color: #ffffff;
+            margin-left: 180px;
+            border: none;
+            border-radius: 5px;
+            color: #445162;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            .adaptive(0, 991px, {
+                display: block;
+                margin: 0 auto;
+            }
+    
+            );
+        }
+    }
+
+
+    .socialContact {
+        float: right;
+        padding-right: 150px;
+
+        .adaptive(992px, 1199px, {
+            padding-right: 0;
+        }
+
+        );
+
+        .adaptive(0, 991px, {
+            margin-top: 50px; 
+            padding-right: 0;
+            float: none;           
+        }
+
+        );
+
+        .skype {
+            background: url(../images/skype_icon.png) no-repeat;
+        }
+
+        .icq {
+            background: url(../images/icq_icon.png) no-repeat;
+        }
+
+        .mail {
+            background: url(../images/email_icon.png) no-repeat;
+        }
+
+        .phone {
+            background: url(../images/phone_icon.png) no-repeat;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 0px;
+            padding-left: 0;            
+        }
+
+        ul li {
+            padding-left: 30px;
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 19px;
+            line-height: 26px;
+        }
+
+        ul li:nth-child(2) {
+            margin-bottom: 20px;
+        }
+
+        ul li:nth-child(4) {
+            margin-bottom: 15px;
+        }
+
+        .socialIcons {
+            font-family: SocialIco, sans-serif;
+            font-size: 0;
+            line-height: 50px;
+            letter-spacing: 3px;
+
+            a {
+                font-size: 60px;
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.copyright {
+    height: 26px;
+    font-size: 12px;
+    color: #445162;
+    line-height: 26px;
+    text-align: center;
 }

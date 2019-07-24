@@ -1,3 +1,7 @@
+@font-face {
+  font-family: SocialIco;
+  src: url(../fonts/Socialico.ttf);
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -364,4 +368,152 @@ section {
     height: inherit;
     padding-bottom: 15px;
   }
+}
+.contactStyle {
+  color: #ffffff;
+  margin-top: -5px;
+  background-color: #445161;
+}
+.contact {
+  background-color: #445161;
+}
+.contact:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.contact .inputClientData {
+  width: 500px;
+  float: left;
+  padding-left: 200px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact .inputClientData {
+    padding-left: 0;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .inputClientData {
+    padding-left: 0;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.contact .inputClientData input {
+  width: 490px;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #445162;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .inputClientData input {
+    width: 100%;
+  }
+}
+.contact .inputClientData textarea {
+  height: 166px;
+  width: 486px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #445162;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  resize: none;
+  margin-bottom: 15px;
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .inputClientData textarea {
+    width: 100%;
+  }
+}
+.contact .inputClientData button {
+  width: 140px;
+  height: 40px;
+  background-color: #ffffff;
+  margin-left: 180px;
+  border: none;
+  border-radius: 5px;
+  color: #445162;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .inputClientData button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.contact .socialContact {
+  float: right;
+  padding-right: 150px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact .socialContact {
+    padding-right: 0;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .socialContact {
+    margin-top: 50px;
+    padding-right: 0;
+    float: none;
+  }
+}
+.contact .socialContact .skype {
+  background: url(../images/skype_icon.png) no-repeat;
+}
+.contact .socialContact .icq {
+  background: url(../images/icq_icon.png) no-repeat;
+}
+.contact .socialContact .mail {
+  background: url(../images/email_icon.png) no-repeat;
+}
+.contact .socialContact .phone {
+  background: url(../images/phone_icon.png) no-repeat;
+}
+.contact .socialContact ul {
+  list-style: none;
+  margin-top: 0px;
+  padding-left: 0;
+}
+.contact .socialContact ul li {
+  padding-left: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 19px;
+  line-height: 26px;
+}
+.contact .socialContact ul li:nth-child(2) {
+  margin-bottom: 20px;
+}
+.contact .socialContact ul li:nth-child(4) {
+  margin-bottom: 15px;
+}
+.contact .socialContact .socialIcons {
+  font-family: SocialIco, sans-serif;
+  font-size: 0;
+  line-height: 50px;
+  letter-spacing: 3px;
+}
+.contact .socialContact .socialIcons a {
+  font-size: 60px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.copyright {
+  height: 26px;
+  font-size: 12px;
+  color: #445162;
+  line-height: 26px;
+  text-align: center;
 }
