@@ -1,74 +1,101 @@
+@font-face {
+  font-family: SocialIco;
+  src: url(../fonts/Socialico.ttf);
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.mainWrap {
-  margin: auto;
-  width: 1280px;
-  height: 1000px;
+@media (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
+.navbar.navbar-default {
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+  background: #ffffff;
+}
+.navbar.navbar-default .navbar-brand {
+  position: relative;
+  bottom: 2px;
 }
 header {
-  box-sizing: border-box;
-  position: relative;
   padding: 50px;
-  height: 323px;
+  min-height: 323px;
   background-color: #445161;
   color: #ffffff;
+}
+header:after {
+  content: '';
+  clear: both;
+  display: block;
 }
 header h1 {
   margin-bottom: 25px;
   margin-top: -12px;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 6rem;
 }
 header ul {
   padding-left: 30px;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 2rem;
+  line-height: 3.6rem;
 }
 header ul li {
   list-style-image: url(../images/check_icon.png);
 }
 header img {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  width: 469px;
-  height: 214px;
+  width: 100%;
+}
+@media (min-width: 0) and (max-width: 992px) {
+  header img {
+    margin-top: 50px;
+  }
 }
 section {
   padding: 50px;
 }
 .aboutProduct {
   padding-bottom: 67px;
-  position: relative;
+}
+.aboutProduct:after {
+  content: '';
+  clear: both;
+  display: block;
 }
 .aboutProduct h2 {
   text-align: left;
 }
 .aboutProduct p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   color: #333333;
+  text-align: justify;
 }
 .aboutProduct img {
-  position: absolute;
-  top: 50px;
-  right: 50px;
   width: 430px;
-  height: 245px;
+  float: right;
+}
+@media (min-width: 0) and (max-width: 1199px) {
+  .aboutProduct img {
+    width: 100%;
+  }
 }
 .headline {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 36px;
+  font-size: 3rem;
+  line-height: 3.6rem;
   color: #445161;
-  margin-top: -10px;
+  padding-top: 50px;
   text-align: center;
+  background: #f5f5f5;
+}
+._transparent {
+  background: none;
 }
 .plus {
   background: #f5f5f5;
-  padding-bottom: 23px;
 }
 .plus:after {
   content: '';
@@ -80,50 +107,51 @@ section {
   color: #333333;
   font-size: 16px;
   line-height: 24px;
+  padding-left: 0;
 }
 .plus ul li {
+  padding-left: 40px;
   margin-bottom: 27px;
+  text-align: justify;
+  background: url(../images/cross.jpg) no-repeat 0 6px;
 }
-.plus .leftColumn {
-  float: left;
-  margin: 0;
-  background: url(../images/cross.jpg) no-repeat 0 6px, url(../images/cross.jpg) no-repeat 0 104px, url(../images/cross.jpg) no-repeat 0 204px;
-}
-.plus .rightColumn {
-  float: right;
-  margin: 0;
-  background: url(../images/cross.jpg) no-repeat 0 6px, url(../images/cross.jpg) no-repeat 0 104px, url(../images/cross.jpg) no-repeat 0 204px;
-  padding-right: 22px;
-}
-.description {
-  float: left;
-  width: 50%;
-  margin-bottom: 4px;
-}
-.scrinshot {
+.screenshot {
   padding-bottom: 56px;
 }
-.scrinshot:after {
+.screenshot:after {
   content: '';
   clear: both;
   display: block;
 }
-.scrinshot img {
+.screenshot img {
   float: left;
   padding-right: 16px;
 }
-.scrinshot h3 {
+@media (min-width: 0) and (max-width: 1199px) {
+  .screenshot img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.screenshot h3 {
   color: #445161;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 2.4rem;
+  line-height: 3rem;
   margin: 0;
   font-weight: 400;
 }
-.scrinshot p {
+@media (min-width: 0) and (max-width: 1199px) {
+  .screenshot h3 {
+    text-align: center;
+  }
+}
+.screenshot p {
   color: #333333;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   margin-top: 7px;
+  text-align: justify;
 }
 .review {
   background: #f5f5f5;
@@ -133,58 +161,104 @@ section {
   clear: both;
   display: block;
 }
-.review .description {
+.review .descriptionReview {
   margin-bottom: 32px;
-  background-image: url(../images/bg_review.svg);
-  background-repeat: no-repeat;
-  background-position: 89px 0;
+}
+.review .descriptionReview:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.review .descriptionReview .reviewBackground {
+  position: relative;
+  float: right;
+  width: 81%;
+  background: #ebebeb;
+  padding: 16px 16px 0 16px;
+  box-sizing: border-box;
+}
+.review .descriptionReview .reviewBackground::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 27px;
+  background: #ebebeb;
+  transform: rotate(45deg);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .review .descriptionReview .reviewBackground {
+    width: 75%;
+  }
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .review .descriptionReview .reviewBackground {
+    width: 100%;
+  }
 }
 .review img {
   border-radius: 50%;
   float: left;
 }
+@media (min-width: 0) and (max-width: 767px) {
+  .review img {
+    float: none;
+    display: block;
+    margin: 0 auto 32px;
+  }
+}
 .review p {
   color: #333333;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   font-style: italic;
-  padding-left: 120px;
+  text-align: justify;
   margin-bottom: 8px;
-}
-.review .offset {
-  padding-left: 17px;
-  box-sizing: border-box;
-  background-position: 106px 0;
 }
 .review .signature {
   color: #989898;
-  font-size: 14px;
-  line-height: 18px;
-  padding-left: 120px;
-}
-.buy {
-  padding-top: 37px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 .flexWrap {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
+@media (min-width: 0) and (max-width: 991px) {
+  .flexWrap {
+    display: block;
+  }
+}
 .flexWrap article {
   background-color: #445161;
   border-radius: 5px;
 }
-.flexWrap article .headline {
+.flexWrap article .headlineBuy {
   color: #ffffff;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 2.4rem;
+  line-height: 3rem;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .flexWrap article ol {
   color: #ffffff;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .flexWrap article ol li {
+    margin: 15px auto;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .flexWrap article ol {
+    margin: 15px auto;
+    width: 50%;
+  }
 }
 .flexWrap article button {
   width: 260px;
@@ -193,31 +267,112 @@ section {
   margin-left: 20px;
   color: #445161;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-transform: uppercase;
   border-radius: 5px;
   border-style: none;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .flexWrap article button {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .flexWrap article button {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 15px;
+  }
 }
 .flexWrap .price {
   height: 71px;
   border: 2px solid #445162;
   background: #ffffff;
   color: #445162;
-  font-size: 40px;
-  line-height: 71px;
+  font-size: 4rem;
+  line-height: 7.1rem;
   text-align: center;
 }
 .flexWrap .standart {
   width: 300px;
   height: 306px;
+  padding: 0;
+}
+.flexWrap .standart:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .flexWrap .standart {
+    width: calc(30.33333333%);
+    height: inherit;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .flexWrap .standart {
+    width: 100%;
+    margin-bottom: 50px;
+    height: inherit;
+    padding-bottom: 15px;
+  }
 }
 .flexWrap .premium {
   width: 300px;
   height: 404px;
+  padding: 0;
+}
+.flexWrap .premium:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .flexWrap .premium {
+    width: calc(30.33333333%);
+    height: inherit;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .flexWrap .premium {
+    width: 100%;
+    margin-bottom: 50px;
+    height: inherit;
+    padding-bottom: 15px;
+  }
 }
 .flexWrap .lux {
   width: 300px;
   height: 499px;
+  padding: 0;
+}
+.flexWrap .lux:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .flexWrap .lux {
+    width: calc(30.33333333%);
+    height: inherit;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .flexWrap .lux {
+    width: 100%;
+    margin-bottom: 50px;
+    height: inherit;
+    padding-bottom: 15px;
+  }
+}
+.contactStyle {
+  color: #ffffff;
+  margin-top: -5px;
+  background-color: #445161;
 }
 .contact {
   background-color: #445161;
@@ -227,14 +382,23 @@ section {
   clear: both;
   display: block;
 }
-.contact .headline {
-  color: #ffffff;
-  margin-top: -5px;
-}
 .contact .inputClientData {
   width: 500px;
   float: left;
   padding-left: 200px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact .inputClientData {
+    padding-left: 0;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .inputClientData {
+    padding-left: 0;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 .contact .inputClientData input {
   width: 490px;
@@ -246,6 +410,11 @@ section {
   color: #445162;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .inputClientData input {
+    width: 100%;
+  }
 }
 .contact .inputClientData textarea {
   height: 166px;
@@ -261,6 +430,11 @@ section {
   resize: none;
   margin-bottom: 15px;
 }
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .inputClientData textarea {
+    width: 100%;
+  }
+}
 .contact .inputClientData button {
   width: 140px;
   height: 40px;
@@ -273,35 +447,47 @@ section {
   font-weight: 600;
   text-transform: uppercase;
 }
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .inputClientData button {
+    display: block;
+    margin: 0 auto;
+  }
+}
 .contact .socialContact {
-  width: 240px;
   float: right;
-  padding-right: 194px;
+  padding-right: 150px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact .socialContact {
+    padding-right: 0;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .contact .socialContact {
+    margin-top: 50px;
+    padding-right: 0;
+    float: none;
+  }
+}
+.contact .socialContact .skype {
+  background: url(../images/skype_icon.png) no-repeat;
+}
+.contact .socialContact .icq {
+  background: url(../images/icq_icon.png) no-repeat;
+}
+.contact .socialContact .mail {
+  background: url(../images/email_icon.png) no-repeat;
+}
+.contact .socialContact .phone {
+  background: url(../images/phone_icon.png) no-repeat;
 }
 .contact .socialContact ul {
   list-style: none;
   margin-top: 0px;
   padding-left: 0;
 }
-.contact .socialContact ul .sprites {
-  height: 26px;
-  width: 26px;
-  padding-right: 3px;
-  float: left;
-}
-.contact .socialContact ul .sprites:nth-child(1) {
-  background: url(../images/sprites.png) no-repeat 0 0;
-}
-.contact .socialContact ul .sprites:nth-child(3) {
-  background: url(../images/sprites.png) no-repeat -50px 0;
-}
-.contact .socialContact ul .sprites:nth-child(5) {
-  background: url(../images/sprites.png) no-repeat 0 -50px;
-}
-.contact .socialContact ul .sprites:nth-child(7) {
-  background: url(../images/sprites.png) no-repeat -50px -50px;
-}
 .contact .socialContact ul li {
+  padding-left: 30px;
   color: #ffffff;
   font-size: 16px;
   margin-bottom: 19px;
@@ -313,29 +499,16 @@ section {
 .contact .socialContact ul li:nth-child(4) {
   margin-bottom: 15px;
 }
-.contact .socialContact .flexWrapSocial {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+.contact .socialContact .socialIcons {
+  font-family: SocialIco, sans-serif;
+  font-size: 0;
+  line-height: 50px;
+  letter-spacing: 3px;
 }
-.contact .socialContact .flexWrapSocial i {
-  height: 39px;
-  width: 39px;
-  font-size: 23px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  line-height: 39px;
-  box-sizing: border-box;
-  padding-left: 9px;
-}
-.contact .socialContact .flexWrapSocial .fab:nth-child(2) {
-  padding-left: 13px;
-}
-.contact .socialContact .flexWrapSocial .fab:nth-child(4) {
-  padding-left: 9px;
-}
-.contact .socialContact .flexWrapSocial .fab:nth-child(5) {
-  padding-left: 7px;
+.contact .socialContact .socialIcons a {
+  font-size: 60px;
+  color: #ffffff;
+  text-decoration: none;
 }
 .copyright {
   height: 26px;
