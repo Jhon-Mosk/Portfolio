@@ -187,6 +187,12 @@ section {
   background: #ebebeb;
   transform: rotate(45deg);
 }
+@media (min-width: 0) and (max-width: 767px) {
+  .review .descriptionReview .reviewBackground::before {
+    left: calc(50% - 10px);
+    top: -10px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .review .descriptionReview .reviewBackground {
     width: 75%;

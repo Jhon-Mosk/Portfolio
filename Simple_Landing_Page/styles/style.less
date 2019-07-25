@@ -227,6 +227,11 @@ section {
                 top: 27px;
                 background: #ebebeb;
                 transform: rotate(45deg);
+
+                .adaptive(0, 767px, {
+                    left: calc(~"50% - 10px");
+                    top: -10px;
+                })
             }
 
             .adaptive(992px, 1199px, {
