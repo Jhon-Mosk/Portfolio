@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+.adaptive (@_minWidth, @_maxWidth, @_styles) {
+    @media (min-width: @_minWidth) and (max-width: @_maxWidth) {
+        @_styles();
+    }
+}
+
+.navbar.navbar-default {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    background: #ffffff;
+
+    & .navbar-brand {
+        position: relative;
+        bottom: 2px;
+    }
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    // object-position: center center;
+}
+
+.callBackFormWrap {
+    height: 270px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    border-radius: 5px;
+
+    .adaptive(992px, 1199px, {
+        top: 25%;
+    }
+
+    );
+
+    form {
+        padding: 30px;
+    }
+
+    label {
+        color: #ffffff;
+        font-weight: 400;
+    }
+
+    label,
+    input {
+        display: block;
+        width: 100%;
+    }
+
+    input[type="text"] {
+        margin-bottom: 20px;
+        outline: none;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #ffffff;
+
+        &:focus {
+            border-bottom: 1px solid #8aff84;
+        }
+    }
+
+    input[type="submit"] {
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        background: none;
+        padding: 20px;
+    }
+}
+
+.mobileFormWrap {
+    height: 200px;
+    background: #f5f5f5;
+    clear: both;
+
+    .adaptive(0, 479px, {
+        height: 300px;
+    }
+
+    );
+
+    .mobileFormInsideWrap {
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & form>div {
+            float: left;
+            height: 80px;
+            margin: 0 5px;
+
+            .adaptive(0, 479px, {
+                float: none;
+                height: auto;
+            }
+
+            );
+        }
+
+        label {
+            color: #8a8a8a;
+            font-size: 2rem;
+        }
+
+        input[type="text"] {
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid #e2e2e2;
+            background: none;
+
+            &:focus {
+                border-bottom: 2px solid #8aff84;
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            color: #8a8a8a;
+            border: 2px solid #e2e2e2;
+            background: none;
+            padding: 17px;
+        }
+    }
+}
