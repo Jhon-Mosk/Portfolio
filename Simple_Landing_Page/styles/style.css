@@ -44,14 +44,16 @@ header ul {
   line-height: 3.6rem;
 }
 header ul li {
-  list-style-image: url(../images/check_icon.png);
+  list-style-image: url(../images/company/system/check_icon.png);
 }
 header img {
-  width: 100%;
+  width: 80%;
+  float: right;
 }
 @media (min-width: 0) and (max-width: 992px) {
   header img {
     margin-top: 50px;
+    float: none;
   }
 }
 section {
@@ -113,7 +115,7 @@ section {
   padding-left: 40px;
   margin-bottom: 27px;
   text-align: justify;
-  background: url(../images/cross.jpg) no-repeat 0 6px;
+  background: url(../images/company/system/cross.jpg) no-repeat 0 6px;
 }
 .screenshot {
   padding-bottom: 56px;
@@ -124,6 +126,8 @@ section {
   display: block;
 }
 .screenshot img {
+  width: 200px;
+  height: 150px;
   float: left;
   padding-right: 16px;
 }
@@ -206,6 +210,8 @@ section {
 .review img {
   border-radius: 50%;
   float: left;
+  width: 75px;
+  height: 75px;
 }
 @media (min-width: 0) and (max-width: 767px) {
   .review img {
@@ -476,16 +482,16 @@ section {
   }
 }
 .contact .socialContact .skype {
-  background: url(../images/skype_icon.png) no-repeat;
+  background: url(../images/company/system/skype_icon.png) no-repeat;
 }
 .contact .socialContact .icq {
-  background: url(../images/icq_icon.png) no-repeat;
+  background: url(../images/company/system/icq_icon.png) no-repeat;
 }
 .contact .socialContact .mail {
-  background: url(../images/email_icon.png) no-repeat;
+  background: url(../images/company/system/email_icon.png) no-repeat;
 }
 .contact .socialContact .phone {
-  background: url(../images/phone_icon.png) no-repeat;
+  background: url(../images/company/system/phone_icon.png) no-repeat;
 }
 .contact .socialContact ul {
   list-style: none;
