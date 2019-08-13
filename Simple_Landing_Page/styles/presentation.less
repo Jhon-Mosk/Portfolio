@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    color: #445161;
+    background: #ccc;
+}
+
+.adaptive (@_minWidth, @_maxWidth, @_styles) {
+    @media (min-width: @_minWidth) and (max-width: @_maxWidth) {
+        @_styles();
+    }
+}
+
+.container {
+    @media (min-width: 1200px) {
+        width: 1280px;
+    }
+}
+
+.navbar.navbar-default {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    background: #ffffff;
+
+    & .navbar-brand {
+        position: relative;
+        bottom: 2px;
+    }
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    // object-position: center center;
+}
+
+.offer {
+    margin-top: -599px;
+    height: 594px;
+    display: flex;
+    justify-content: center;
+
+    .jumbotron {
+        color: #6c7d92;
+        position: relative;
+        background: none;
+        width: 60%;
+
+        h1 {
+            font-size: 6.3rem;
+        }
+
+        p {
+            font-size: 2.1rem;
+            font-weight: bold;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        a.btn {
+            color: #f5f5f5;
+            outline: none;
+            background-color: #445161;
+            border: none;
+        }
+    }
+}
+
+.callbackForm {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    form {
+        button[type="submit"] {
+            color: #f5f5f5;
+            outline: none;
+            background-color: #445161;
+            border: none;
+        }
+    }
+}
+
+.ourTeam {
+    padding: 2%;
+
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 6.3rem;
+        margin-bottom: 35px;
+    }
+
+    .descriptionReview {
+        margin-bottom: 15px;
+
+        &:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    }
+
+    .reviewBackground {
+        position: relative;
+        background: #ebebeb;
+        float: right;
+        width: 81%;
+        background: #ebebeb;
+        padding: 16px 16px 0 16px;
+        box-sizing: border-box;
+
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: -10px;
+            top: 27px;
+            background: #ebebeb;
+            transform: rotate(45deg);
+
+            .adaptive(0, 767px, {
+                    left: calc(~"50% - 10px");
+                    top: -10px;
+                }
+
+            )
+        }
+
+        .adaptive(992px, 1199px, {
+                width: 75%;
+            }
+
+        );
+
+        .adaptive(0, 767px, {
+                width: 100%;
+            }
+
+        );
+    }
+
+
+    img {
+        border-radius: 50%;
+        float: left;
+        width: 75px;
+        height: 75px;
+        box-shadow: 0 0 30px #445161;
+
+        .adaptive(0, 767px, {
+                float: none;
+                display: block;
+                margin: 0 auto 32px;
+            }
+
+        );
+    }
+
+    p {
+        color: #333333;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-style: italic;
+
+
+        text-align: justify;
+        margin-bottom: 8px;
+    }
+
+    .signature {
+        color: #989898;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+}
+
+.ourExperience {
+
+    video {
+    width: 100%;
+    object-fit: cover;
+    }
+}
+
+.workWithUs {
+    padding: 5%;
+
+    header {
+        font-size: 6.3rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    form {
+        background: #445161;
+        padding: 50px;
+        // width: 60%;
+
+        label,
+        input {
+            display: block;
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="time"] {
+          outline: none;
+          color: #445161;
+          margin-bottom: 21px;
+          padding: 7px 5px;
+          border-radius: 5px;
+          border: none;
+        }
+        
+        input[type="submit"] {
+          border-radius: 5px;
+          background-color: #ffffff;
+          width: 140px;
+          height: 40px;
+          text-align: center;
+          color: #445161;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          border: none;
+          display: block;
+          margin: 0 auto;
+          cursor: pointer;
+          outline: none;
+          text-transform: uppercase;
+        }
+    }
+
+}
+
+.copyright {
+    height: 26px;
+    font-size: 12px;
+    color: #445162;
+    line-height: 26px;
+    text-align: center;
+}
