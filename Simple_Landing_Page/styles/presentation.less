@@ -89,6 +89,7 @@ video {
 }
 
 .ourTeam {
+    padding: 2%;
 
     &:after {
         content: '';
@@ -96,6 +97,22 @@ video {
         display: block;
     }
     
+    h1 {
+        text-align: center;
+        font-size: 6.3rem;
+        margin-bottom: 35px;
+    }
+
+    .descriptionReview {
+        margin-bottom: 15px;
+
+        &:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    }
+
     .reviewBackground {
         position: relative;
         background: #ebebeb;
@@ -142,6 +159,7 @@ video {
         float: left;
         width: 75px;
         height: 75px;
+        box-shadow: 0 0 30px #445161;
 
         .adaptive(0, 767px, {
                 float: none;
@@ -168,6 +186,65 @@ video {
         font-size: 1.4rem;
         line-height: 1.8rem;
     }
+}
+
+.ourExperience {
+
+    video {
+    width: 100%;
+    object-fit: cover;
+    }
+}
+
+.workWithUs {
+    padding: 5%;
+
+    header {
+        font-size: 6.3rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    form {
+        background: #445161;
+        padding: 50px;
+        // width: 60%;
+
+        label,
+        input {
+            display: block;
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="time"] {
+          outline: none;
+          color: #445161;
+          margin-bottom: 21px;
+          padding: 7px 5px;
+          border-radius: 5px;
+          border: none;
+        }
+        
+        input[type="submit"] {
+          border-radius: 5px;
+          background-color: #ffffff;
+          width: 140px;
+          height: 40px;
+          text-align: center;
+          color: #445161;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          border: none;
+          display: block;
+          margin: 0 auto;
+          cursor: pointer;
+          outline: none;
+          text-transform: uppercase;
+        }
+    }
+
 }
 
 .copyright {

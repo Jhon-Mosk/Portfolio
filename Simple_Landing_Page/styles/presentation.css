@@ -66,7 +66,23 @@ video {
   background-color: #445161;
   border: none;
 }
+.ourTeam {
+  padding: 2%;
+}
 .ourTeam:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.ourTeam h1 {
+  text-align: center;
+  font-size: 6.3rem;
+  margin-bottom: 35px;
+}
+.ourTeam .descriptionReview {
+  margin-bottom: 15px;
+}
+.ourTeam .descriptionReview:after {
   content: '';
   clear: both;
   display: block;
@@ -110,6 +126,7 @@ video {
   float: left;
   width: 75px;
   height: 75px;
+  box-shadow: 0 0 30px #445161;
 }
 @media (min-width: 0) and (max-width: 767px) {
   .ourTeam img {
@@ -130,6 +147,53 @@ video {
   color: #989898;
   font-size: 1.4rem;
   line-height: 1.8rem;
+}
+.ourExperience video {
+  width: 100%;
+  object-fit: cover;
+}
+.workWithUs {
+  padding: 5%;
+}
+.workWithUs header {
+  font-size: 6.3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.workWithUs form {
+  background: #445161;
+  padding: 50px;
+}
+.workWithUs form label,
+.workWithUs form input {
+  display: block;
+  width: 100%;
+}
+.workWithUs form input[type="text"],
+.workWithUs form input[type="time"] {
+  outline: none;
+  color: #445161;
+  margin-bottom: 21px;
+  padding: 7px 5px;
+  border-radius: 5px;
+  border: none;
+}
+.workWithUs form input[type="submit"] {
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  color: #445161;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
 }
 .copyright {
   height: 26px;
