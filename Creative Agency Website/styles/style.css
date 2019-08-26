@@ -148,3 +148,52 @@ body {
   background-blend-mode: overlay;
   padding: 0 200px 0 200px;
 }
+.specialist-opinion .is-bias-image {
+  top: 66px;
+}
+.specialist-opinion .is-bias-caption {
+  top: 50px;
+}
+.specialist-opinion .is-position-carousel-indicators {
+  top: 417px;
+  left: 837px;
+}
+.specialist-opinion .carousel-indicators li {
+  background-color: #ffffff;
+  border: none;
+}
+.specialist-opinion .carousel-indicators .active {
+  background-color: #00aeed;
+  border: none;
+}
+.specialist-opinion .carousel-caption-style {
+  display: grid;
+  grid-template-columns: 117px 400px 117px;
+  grid-gap: 30px;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  left: 492px;
+  top: -25px;
+}
+.specialist-opinion .carousel-caption-style .carousel-quotes {
+  width: 117px;
+  height: 86px;
+  color: #00aeed;
+  font-size: 8.6rem;
+  letter-spacing: 1.8px;
+}
+.specialist-opinion .carousel-caption-style p {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.42px;
+  text-align: justify;
+}
+.specialist-opinion .carousel-caption-style .signature .author {
+  display: block;
+  font-size: 30px;
+  letter-spacing: 0.48px;
+}
+.specialist-opinion .carousel-caption-style .signature .position {
+  font-size: 15px;
+  letter-spacing: 0.24px;
+}

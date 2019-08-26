@@ -16,7 +16,6 @@ body {
 
 
     header {
-        // height: 620px;
         position: relative;        
 
         nav {
@@ -171,4 +170,68 @@ body {
     background-color: #088298;
     background-blend-mode: overlay;
     padding: 0 200px 0 200px;
+
+    .is-bias-image {
+        top: 66px;
+    }
+
+    .is-bias-caption {
+        top: 50px;
+    }
+
+    .is-position-carousel-indicators {
+        top: 417px;
+        left: 837px;
+    }
+
+    .carousel-indicators {
+
+        li {
+        background-color: #ffffff;
+        border: none;
+        }
+
+        .active{
+        background-color: #00aeed;
+        border: none;
+        }
+    }
+
+    .carousel-caption-style {
+        display: grid;
+        grid-template-columns: 117px 400px 117px;
+        grid-gap: 30px;
+        font-family: 'Lato', sans-serif;
+        position: absolute;
+        left: 492px;
+        top: -25px;
+    
+        .carousel-quotes {
+            width: 117px;
+            height: 86px;
+            color: #00aeed;
+            font-size: 8.6rem;
+            letter-spacing: 1.8px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 30px;
+            letter-spacing: 0.42px;
+            text-align: justify;
+        }
+
+        .signature {
+            .author {
+                display: block;
+                font-size: 30px;
+                letter-spacing: 0.48px;
+            }
+
+            .position {
+                font-size: 15px;
+                letter-spacing: 0.24px;
+            }
+        }
+    }
 }
