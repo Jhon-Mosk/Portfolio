@@ -201,3 +201,59 @@ body {
   font-size: 15px;
   letter-spacing: 0.24px;
 }
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 85px 255px 95px 255px;
+  background: url(../images/Layer_11.png) no-repeat center;
+  background-color: #00528c;
+  background-blend-mode: color-burn;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.42px;
+  grid-gap: 15px;
+}
+.service p {
+  text-align: center;
+}
+.service h2 {
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 30px;
+}
+.service .main-think {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.service .main-think .main-title {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.service .service-image {
+  width: 94px;
+  height: 94px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.service .one {
+  background: url(../images/Service1.png) no-repeat center center;
+}
+.service .two {
+  background: url(../images/Service2.png) no-repeat center center;
+}
+.service .three {
+  background: url(../images/Service3.png) no-repeat center center;
+}
+.service .four {
+  background: url(../images/Service4.png) no-repeat center center;
+}
