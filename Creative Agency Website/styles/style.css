@@ -7,6 +7,27 @@ body {
   display: grid;
   grid-template-rows: 0 620px 615px 465px 895px 605px 855px 332px 640px 180px;
 }
+.is-button {
+  display: block;
+  width: 129px;
+  height: 36px;
+  background-color: #00aeed;
+  border-radius: 23px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 36px;
+  text-decoration: none;
+  margin-top: 39px;
+}
+.is-button:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #006387;
+}
+.is-button:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
 .headerWrap {
   padding: 0 200px 0 200px;
   background: url(../images/world-map.png) no-repeat center, #082938;
@@ -81,18 +102,6 @@ body {
   letter-spacing: 0.42px;
   text-align: justify;
 }
-.headerWrap header .descriptionAgency a {
-  display: block;
-  width: 129px;
-  height: 36px;
-  background-color: #00aeed;
-  border-radius: 23px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 36px;
-  text-decoration: none;
-  margin-top: 39px;
-}
 .whoWe {
   position: relative;
 }
@@ -116,18 +125,6 @@ body {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.42px;
-}
-.whoWe .aboutWhoWe a {
-  display: block;
-  width: 129px;
-  height: 36px;
-  background-color: #00aeed;
-  border-radius: 23px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 36px;
-  text-decoration: none;
-  margin-top: 39px;
 }
 .whoWe .blueSquare {
   position: absolute;
@@ -295,7 +292,7 @@ body {
 }
 .what-we-do .description {
   height: 600px;
-  padding: 55px 85px;
+  padding: 68px 85px;
   font-family: 'Lato', sans-serif;
 }
 .what-we-do .description header {
@@ -304,7 +301,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.55px;
   color: #000000;
-  padding-bottom: 50px;
+  padding-bottom: 54px;
 }
 .what-we-do .description h2 {
   color: #151515;
@@ -312,6 +309,8 @@ body {
   font-weight: 900;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .what-we-do .description p {
   letter-spacing: 0.4px;
@@ -328,12 +327,50 @@ body {
 }
 .what-we-do .description ul li:nth-child(1) {
   background: url(../images/Icon1.png) no-repeat;
-  padding-bottom: 50px;
+  padding-bottom: 54px;
 }
 .what-we-do .description ul li:nth-child(2) {
   background: url(../images/Icon2.png) no-repeat;
-  padding-bottom: 50px;
+  padding-bottom: 54px;
 }
 .what-we-do .description ul li:nth-child(3) {
   background: url(../images/Icon3.png) no-repeat;
+}
+.latest-news {
+  padding: 0 215px;
+  display: grid;
+  grid-gap: 65px;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Lato', sans-serif;
+}
+.latest-news h1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-self: end;
+  justify-self: center;
+  color: #000000;
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+}
+.latest-news .is-right {
+  justify-self: end;
+}
+.latest-news .news-description {
+  width: 520px;
+}
+.latest-news .news-description h2 {
+  color: #151515;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: -90px;
+}
+.latest-news .news-description p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 24px;
 }
