@@ -5,7 +5,7 @@ body {
   margin: 0 auto;
   width: 1600px;
   display: grid;
-  grid-template-rows: 0 620px 615px 465px 895px 1465px 332px 640px 180px;
+  grid-template-rows: 0 620px 615px 465px 895px 605px 855px 332px 640px 180px;
 }
 .headerWrap {
   padding: 0 200px 0 200px;
@@ -256,4 +256,84 @@ body {
 }
 .service .four {
   background: url(../images/Service4.png) no-repeat center center;
+}
+.what-we-do {
+  display: grid;
+  grid-template-columns: 718px 1fr;
+}
+.what-we-do .image-what-we-do {
+  background: url(../images/28.jpg) no-repeat center;
+  background-color: #043740;
+  background-blend-mode: overlay;
+}
+.what-we-do .image-what-we-do .think {
+  margin: 162px auto;
+  width: 334px;
+  height: 254px;
+  color: #ffffff;
+  font-family: 'Schoolbell', sans-serif;
+  text-transform: uppercase;
+}
+.what-we-do .image-what-we-do .think span:nth-child(1) {
+  font-size: 122px;
+  letter-spacing: 5.8px;
+  line-height: 122px;
+}
+.what-we-do .image-what-we-do .think span:nth-child(2) {
+  font-size: 78px;
+  letter-spacing: 3.71px;
+  line-height: 77px;
+}
+.what-we-do .image-what-we-do .think span:nth-child(3) {
+  font-size: 41px;
+  letter-spacing: 1.95px;
+  line-height: 44px;
+}
+.what-we-do .image-what-we-do .think span:nth-child(4) {
+  letter-spacing: 1.43px;
+  font-size: 30px;
+}
+.what-we-do .description {
+  height: 600px;
+  padding: 55px 85px;
+  font-family: 'Lato', sans-serif;
+}
+.what-we-do .description header {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  color: #000000;
+  padding-bottom: 50px;
+}
+.what-we-do .description h2 {
+  color: #151515;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.what-we-do .description p {
+  letter-spacing: 0.4px;
+  color: #707070;
+  font-size: 16px;
+  line-height: 24px;
+}
+.what-we-do .description ul {
+  list-style: none;
+  padding-left: 0;
+}
+.what-we-do .description ul li {
+  padding-left: 69px;
+}
+.what-we-do .description ul li:nth-child(1) {
+  background: url(../images/Icon1.png) no-repeat;
+  padding-bottom: 50px;
+}
+.what-we-do .description ul li:nth-child(2) {
+  background: url(../images/Icon2.png) no-repeat;
+  padding-bottom: 50px;
+}
+.what-we-do .description ul li:nth-child(3) {
+  background: url(../images/Icon3.png) no-repeat;
 }
