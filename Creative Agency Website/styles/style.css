@@ -374,3 +374,26 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+.social {
+  background: url(../images/Layer_9.png) no-repeat center;
+  background-color: #0094ae;
+  background-blend-mode: overlay;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(7, 82px);
+  align-items: center;
+  justify-content: center;
+}
+.social a {
+  text-decoration: none;
+}
+.social i {
+  width: 82px;
+  height: 82px;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 75px;
+  border: 3px solid white;
+  border-radius: 50%;
+  text-align: center;
+}
