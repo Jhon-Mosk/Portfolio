@@ -5,7 +5,7 @@ body {
   margin: 0 auto;
   width: 1600px;
   display: grid;
-  grid-template-rows: 0 620px 615px 465px 895px 605px 855px 332px 640px 180px;
+  grid-template-rows: 0 620px 615px 465px 895px 605px 855px 332px 700px 180px;
 }
 .is-button {
   display: block;
@@ -465,6 +465,7 @@ body {
   width: 540px;
   display: grid;
   grid-template-columns: 90px 1fr;
+  grid-template-rows: 85px;
 }
 .how-find-us form h2 {
   grid-column-start: 1;
@@ -484,4 +485,22 @@ body {
 .how-find-us form input:focus {
   outline: none;
   border-bottom: 3px solid #029e24;
+}
+.how-find-us form a {
+  grid-column-start: 2;
+}
+footer {
+  background-color: #062736;
+  display: grid;
+  justify-items: center;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+footer span:last-child {
+  text-transform: uppercase;
 }
