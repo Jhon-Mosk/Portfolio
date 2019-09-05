@@ -397,3 +397,91 @@ body {
   border-radius: 50%;
   text-align: center;
 }
+.how-find-us {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 70px 260px 80px 215px;
+  font-family: 'Lato', sans-serif;
+}
+.how-find-us .how-find-us-title {
+  color: #000000;
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  margin-bottom: 85px;
+}
+.how-find-us h2 {
+  color: #151515;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.42px;
+  margin-bottom: 54px;
+}
+.how-find-us .contact {
+  width: 270px;
+}
+.how-find-us .contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+.how-find-us .contact ul li {
+  padding-left: 105px;
+  margin-bottom: 54px;
+}
+.how-find-us .contact ul li:nth-child(1) {
+  background: url(../images/Icon4.png) no-repeat;
+  background-position-y: bottom;
+}
+.how-find-us .contact ul li:nth-child(2) {
+  background: url(../images/Icon5.png) no-repeat;
+  background-position-y: bottom;
+}
+.how-find-us .contact ul li:nth-child(3) {
+  background: url(../images/Icon6.png) no-repeat;
+  background-position-y: bottom;
+  margin-bottom: 0;
+}
+.how-find-us .contact h3 {
+  color: #141414;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+.how-find-us .contact h3 span {
+  color: #585858;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+.how-find-us form {
+  justify-self: end;
+  width: 540px;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+}
+.how-find-us form h2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.how-find-us form label {
+  align-self: center;
+}
+.how-find-us form input {
+  border: none;
+  border-bottom: 3px solid #cacaca;
+  color: #585858;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+.how-find-us form input:focus {
+  outline: none;
+  border-bottom: 3px solid #029e24;
+}
