@@ -61,13 +61,13 @@ body {
             a {
                 color: #6c6c6c;
                 font-family: "Nexa Bold", sans-serif;
-                font-size: 20px;                
+                font-size: 20px;
 
                 &:hover {
                     color: #262626;
                 }
             }
-            
+
         }
 
         .social {
@@ -78,12 +78,72 @@ body {
                 color: #191919;
                 font-size: 23px;
                 letter-spacing: 23px;
+
+                &:hover {
+                    color: #6c6c6c; 
+                }
             }
         }
     }
 }
 
-.sd {
-    height: 100px;
-    background: red;
+.medicare-plan-options {
+    position: relative;
+    height: 640px;
+    background: url(../images/Layer_10_doctor.jpg);
+
+    .medicare-plan-options-wrap {
+        top: 180px;
+        left: 250px;
+        width: 550px;
+        position: absolute;
+
+        .medicare-plan-options_title {
+            height: 104px;
+            color: #474747;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            letter-spacing: -1.19px;
+            text-align: center;
+            margin-bottom: 37px;
+        }
+
+        .medicare-plan-options_main {
+            color: #3f3f3f;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 17px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .button {
+            display: block;
+            width: 166px;
+            height: 47px;
+            box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
+            background-color: #1a9bdc;
+            color: #ffffff;
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.32px;
+            text-decoration: none;
+            line-height: 47px;
+            text-align: center;
+            border-radius: 25px;
+            margin: 42px auto 0;
+
+            &:hover {
+                background-color: #37c3a8;
+            }
+        }
+    }
+
+    img {
+        width: 125px;
+        position: absolute;
+        top: 538px;
+        left: 819px;
+    }
 }
