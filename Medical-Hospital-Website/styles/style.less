@@ -200,3 +200,67 @@ body {
     }
 
 }
+
+.why-choose-us {
+    padding: 0 210px; 
+
+    .why-choose-us-title {
+        color: #494949;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        margin: 110px 0 30px;
+    }
+
+    .why-choose-us-main {
+        color: #6a6a6a;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .why-choose-us-wrap {
+        display: grid;
+        grid-template-columns: 1fr 337px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 57px;
+
+        .why-choose-us-unit {
+            margin-top: 95px;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -20px;
+            }
+
+            .unit-title {
+                color: #6f6f6e;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: -1.82px;
+                text-align: center;
+                margin-bottom: 43px;
+            }
+
+            .unit-main {
+                color: #6a6a6a;
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        .woman-doctor {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            align-self: end;
+        }
+    }
+}
