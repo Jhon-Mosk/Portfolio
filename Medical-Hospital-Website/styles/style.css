@@ -9,6 +9,27 @@ body {
   width: 1600px;
   margin: 0 auto;
 }
+.is-button {
+  display: block;
+  width: 166px;
+  height: 47px;
+  box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
+  background-color: #1a9bdc;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+  line-height: 47px;
+  text-align: center;
+  border-radius: 25px;
+  margin: 42px auto 0;
+}
+.is-button:hover {
+  background-color: #37c3a8;
+}
 .header-inside {
   width: 1200px;
   margin: 0 auto;
@@ -100,27 +121,6 @@ body {
   font-size: 17px;
   line-height: 30px;
   text-align: center;
-}
-.medicare-plan-options .medicare-plan-options-wrap .button {
-  display: block;
-  width: 166px;
-  height: 47px;
-  box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
-  background-color: #1a9bdc;
-  color: #ffffff;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.32px;
-  text-decoration: none;
-  line-height: 47px;
-  text-align: center;
-  border-radius: 25px;
-  margin: 42px auto 0;
-}
-.medicare-plan-options .medicare-plan-options-wrap .button:hover {
-  background-color: #37c3a8;
 }
 .medicare-plan-options img {
   width: 125px;
@@ -252,4 +252,85 @@ body {
 .statistics .statistics-unit .statistics-value {
   font-size: 25px;
   letter-spacing: -1.52px;
+}
+.work {
+  height: 895px;
+  display: grid;
+  grid-template-columns: 715px 425px;
+  grid-gap: 55px;
+  justify-content: center;
+  align-content: center;
+  color: #6a6a6a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+.work .work-title {
+  color: #494949;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: normal;
+}
+.work .how-we-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 40px;
+}
+.work .how-we-work .how-we-work-description {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.work .how-we-work .work-signature {
+  margin-top: 35px;
+  color: #6f6f6e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1.21px;
+}
+.work .how-we-work .work-date-and-author {
+  margin-bottom: 25px;
+  color: #0087be;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+}
+.work .how-we-work .is-button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.work .our-creative a {
+  text-decoration: none;
+}
+.work .our-creative .heart-treatment {
+  width: 422px;
+  height: 54px;
+  background-color: #e2e2e2;
+  border-radius: 30px;
+  margin: 6px 0;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  grid-gap: 20px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 6px;
+}
+.work .our-creative .heart-treatment:hover {
+  background-color: #0087be;
+}
+.work .our-creative .heart-treatment .circle {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  color: #0087be;
+  line-height: 40px;
+  border-radius: 50%;
 }
