@@ -307,12 +307,13 @@ body {
 }
 
 .work {
+    padding-top: 100px;
     height: 895px;
     display: grid;
     grid-template-columns: 715px 425px;
     grid-gap: 55px;
     justify-content: center;
-    align-content: center;
+    align-content: baseline;
     color: #6a6a6a;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -324,6 +325,7 @@ body {
         font-size: 45px;
         font-weight: 700;
         line-height: normal;
+        margin-bottom: 38px;
     }
 
     .how-we-work {
@@ -365,6 +367,10 @@ body {
 
         a {
             text-decoration: none;
+        }
+
+        .is-margin {
+            margin-bottom: 50px;
         }
 
         .heart-treatment {
@@ -426,6 +432,60 @@ body {
             font-size: 45px;
             font-weight: 700;
             margin-bottom: 38px;
+        }
+    }
+}
+
+.our-team {
+    box-sizing: border-box;
+    height: 920px;
+    text-align: center;
+    padding: 145px 185px;
+
+    .our-team-description {
+        color: #6a6a6a;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 85px; 
+
+        .our-team-title {
+            color: #494949;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+    }
+
+    .our-team-unit-wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+
+        .our-team-unit {
+            color: #6f6f6e;
+            font-family: 'Montserrat', sans-serif;
+
+            .doctor-name {
+                font-size: 25px;
+                font-weight: 500;
+                margin: 30px 0 15px;
+            }
+
+            .doctor-function {                
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: -1.09px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0087be;
+                font-size: 25px;
+                letter-spacing: 12.8px;
+            }
         }
     }
 }
