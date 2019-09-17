@@ -220,3 +220,36 @@ body {
   grid-row-end: 3;
   align-self: end;
 }
+.statistics {
+  height: 595px;
+  background: url(../images/Layer_9.png);
+  background-color: #0087be;
+  background-blend-mode: multiply;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 250px;
+}
+.statistics .statistics-unit {
+  align-self: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.statistics .statistics-unit img {
+  height: 80px;
+}
+.statistics .statistics-unit .statistics-figures {
+  font-size: 60px;
+  letter-spacing: -1.19px;
+}
+.statistics .statistics-unit .statistics-line {
+  margin: 26px auto;
+  height: 6px;
+  width: 84px;
+  background-color: #ffffff;
+}
+.statistics .statistics-unit .statistics-value {
+  font-size: 25px;
+  letter-spacing: -1.52px;
+}
