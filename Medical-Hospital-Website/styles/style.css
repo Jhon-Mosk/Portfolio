@@ -304,6 +304,11 @@ body {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+.work .how-we-work .is-resize {
+  width: 154px;
+  height: 43px;
+  font-size: 17px;
+}
 .work .our-creative a {
   text-decoration: none;
 }
@@ -429,4 +434,111 @@ body {
 .new-patient .is-button {
   justify-content: right;
   margin: 0;
+}
+.new-patient .is-resize {
+  width: 192px;
+  height: 54px;
+  font-size: 21px;
+}
+footer {
+  background-color: #171717;
+  height: 630px;
+  padding: 115px 225px;
+  box-sizing: border-box;
+}
+footer .footer-inside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px;
+  font-family: "Open Sans", sans-serif;
+}
+footer .footer-inside a .fas {
+  margin-right: 20px;
+  color: #0087be;
+  font-size: 16px;
+}
+footer .footer-inside .get-in-touch {
+  color: #7f7f7f;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+footer .footer-inside .get-in-touch div:nth-child(2) {
+  background: url(../images/footer_mail.png) no-repeat left;
+  padding-left: 83px;
+  margin-bottom: 50px;
+}
+footer .footer-inside .get-in-touch div:nth-child(3) {
+  background: url(../images/footer_phone.png) no-repeat left;
+  padding-left: 83px;
+  margin-bottom: 50px;
+}
+footer .footer-inside .get-in-touch div:nth-child(4) {
+  background: url(../images/footer_geo.png) no-repeat left;
+  padding-left: 83px;
+  margin-bottom: 50px;
+}
+footer .footer-inside .get-in-touch .footer-social {
+  font-size: 25px;
+  letter-spacing: 18.8px;
+}
+footer .footer-inside .get-in-touch .footer-social a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .footer-inside .quick-links a,
+footer .footer-inside .our-services a {
+  display: block;
+  text-decoration: none;
+  color: #7f7f7f;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+}
+footer .footer-inside .enquiry-form {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.55px;
+  color: #7f7f7f;
+  font-family: "Open Sans", sans-serif;
+}
+footer .footer-inside .enquiry-form input,
+footer .footer-inside .enquiry-form textarea {
+  border: none;
+  border-bottom: 3px solid #7f7f7f;
+  font-family: "Open Sans", sans-serif;
+  color: #7f7f7f;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  background: none;
+  margin-bottom: 10px;
+}
+footer .footer-inside .enquiry-form input:focus,
+footer .footer-inside .enquiry-form textarea:focus {
+  outline: none;
+}
+footer .footer-inside .enquiry-form input {
+  height: 40px;
+}
+footer .footer-inside .enquiry-form textarea {
+  height: 110px;
+  resize: none;
+}
+footer .footer-inside .enquiry-form .is-button {
+  margin: 20px 0;
+}
+footer .footer-inside .enquiry-form .is-button .is-resize {
+  width: 125px;
+  height: 35px;
+  font-size: 14px;
+}
+footer .footer-inside .footer-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.55px;
+  margin-bottom: 70px;
+  opacity: unset;
 }
