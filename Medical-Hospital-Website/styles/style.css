@@ -542,3 +542,13 @@ footer .footer-inside .footer-title {
   margin-bottom: 70px;
   opacity: unset;
 }
+.copyrights {
+  height: 115px;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #615555;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 115px;
+  letter-spacing: 0.33px;
+}
