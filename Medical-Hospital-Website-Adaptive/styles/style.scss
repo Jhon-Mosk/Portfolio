@@ -216,11 +216,12 @@ body {
     }
 
 }
+
 .why-choose-us {
 
     .why-choose-us-title {
         color: #494949;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $headerFont;
         font-size: 45px;
         font-weight: 700;
         text-align: center;
@@ -228,8 +229,8 @@ body {
     }
 
     .why-choose-us-main {
-        color: #6a6a6a;
-        font-family: "Open Sans", sans-serif;
+        color: $textColor;
+        font-family: $textFont;
         font-size: 16px;
         line-height: 30px;
         text-align: center;
@@ -268,7 +269,7 @@ body {
 
             .unit-title {
                 color: #6f6f6e;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $headerFont;
                 font-size: 30px;
                 font-weight: 700;
                 letter-spacing: -1.82px;
@@ -277,8 +278,8 @@ body {
             }
 
             .unit-main {
-                color: #6a6a6a;
-                font-family: "Open Sans", sans-serif;
+                color: $textColor;
+                font-family: $textFont;
                 font-size: 16px;
                 line-height: 30px;
             }
@@ -313,4 +314,64 @@ body {
             }
         }
     }
+}
+
+.statistics {
+    min-height: 595px;
+    background: url(../images/Layer_9.png);
+    background-color: #0087be;
+    background-blend-mode: multiply;
+
+    .container {
+        align-items: center;
+        min-height: inherit;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr; 
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr 1fr; 
+        }
+    }
+
+    .statistics-unit {        
+        text-align: center;
+        color: $lightColor;
+        font-family: $headerFont;
+        font-weight: 500;
+
+        @include respondTo(phones) {
+            margin-top: 50px;
+        }
+
+        @include respondTo(wide-phones) {
+            margin-top: 50px;
+        }
+
+
+        img {
+            height: 80px;
+        }
+
+        .statistics-figures {
+            font-size: 60px;
+            letter-spacing: -1.19px;
+        }
+
+        .statistics-line {
+            margin: 26px auto;
+            height: 6px;
+            width: 84px;
+            background-color: $lightColor;
+        }
+
+        .statistics-value {
+            font-size: 25px;
+            letter-spacing: -1.52px;
+        }
+    }
+
 }
