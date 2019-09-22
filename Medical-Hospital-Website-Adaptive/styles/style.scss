@@ -157,3 +157,62 @@ body {
         }
     }
 }
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respondTo(tablets) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respondTo(sm-desktops) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .benefits-unit {
+        box-sizing: border-box;
+        padding: 75px 62px 57px;
+        text-align: center;
+
+        &:nth-child(1) {
+            background-color: #43b1d2;
+        }
+
+        &:nth-child(2) {
+            background-color: #3fb6c6;
+        }
+
+        &:nth-child(3) {
+            background-color: #3cbbbb;
+        }
+
+        &:nth-child(4) {
+            background-color: #37c3a8;
+        }
+
+    }
+
+    .benefits-description-wrap {
+        color: $lightColor;
+
+        .benefits-title {
+            font-family: $headerFont;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -1.82px;
+            margin: 24px 0 23px;
+        }
+
+        .benefits-main {
+            font-family: $textFont;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+}
