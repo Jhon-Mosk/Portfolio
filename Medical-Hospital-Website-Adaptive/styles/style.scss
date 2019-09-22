@@ -61,24 +61,16 @@ body {
     }
 
     .nav-and-social {
-        height: 36px;
+        min-height: 36px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         border-top: 2px solid #c2c2c2;
         margin: 0 10px;
         padding: 30px 0;
 
-        @include respondTo(phones) {
+        @media (max-width: 991px) {
             grid-template-columns: 1fr;
         } 
-
-        @include respondTo(wide-phones) {
-            grid-template-columns: 1fr;
-        }
-
-        @include respondTo(tablets) {
-            grid-template-columns: 1fr;
-        }   
 
         a {
             text-decoration: none;
@@ -88,11 +80,7 @@ body {
             display: flex;
             justify-content: space-between;
 
-            @include respondTo(phones) {
-                display: block;
-            }
-
-            @include respondTo(wide-phones) {
+            @media (max-width: 767px) {
                 display: block;
             }
 
@@ -101,12 +89,7 @@ body {
                 font-family: "Nexa Bold", sans-serif;
                 font-size: 20px;
 
-                @include respondTo(phones) {
-                    display: block;
-                    margin-bottom: 20px;
-                }
-
-                @include respondTo(wide-phones) {
+                @media (max-width: 767px) {
                     display: block;
                     margin-bottom: 20px;
                 }
@@ -121,19 +104,13 @@ body {
         .social {
             justify-self: end;
             align-self: end;
-            height: 90px;
 
-            @include respondTo(phones) {
-                justify-self: normal;
-            }
-
-            @include respondTo(wide-phones) {
+            @media (max-width: 991px) {
                 justify-self: normal;
             }
 
             @include respondTo(tablets) {
                 margin-top: 20px;
-                justify-self: normal;
             }
 
             a {
@@ -145,6 +122,38 @@ body {
                     color: $headerColor;
                 }
             }
+        }
+    }
+}
+
+.medicare-plan-options {
+    height: 640px;
+    background: url(../images/Layer_10_doctor.jpg) center;
+    background-size: cover;
+
+    .medicare-plan-options-wrap {
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;        
+
+        .medicare-plan-options_title {
+            color: $headerMediumColor;
+            font-family: $headerFont;
+            font-weight: 500;
+            font-size: 48px;
+            letter-spacing: -1.19px;
+            text-align: center;
+            margin-bottom: 37px;
+        }
+
+        .medicare-plan-options_main {
+            color: #3f3f3f;
+            font-family: $textFont;
+            font-size: 17px;
+            line-height: 30px;
+            text-align: center;
         }
     }
 }

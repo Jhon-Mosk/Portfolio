@@ -17,6 +17,30 @@
   }
 }
 
+.is-button {
+  display: block;
+  width: 166px;
+  height: 47px;
+  -webkit-box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
+          box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
+  background-color: #1a9bdc;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+  line-height: 47px;
+  text-align: center;
+  border-radius: 25px;
+  margin: 42px auto 0;
+}
+
+.is-button:hover {
+  background-color: #37c3a8;
+}
+
 body {
   margin: 0;
 }
@@ -85,7 +109,7 @@ body {
 }
 
 .header-inside .nav-and-social {
-  height: 36px;
+  min-height: 36px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -95,21 +119,7 @@ body {
   padding: 30px 0;
 }
 
-@media (max-width: 479px) {
-  .header-inside .nav-and-social {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-  .header-inside .nav-and-social {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .header-inside .nav-and-social {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -129,13 +139,7 @@ body {
           justify-content: space-between;
 }
 
-@media (max-width: 479px) {
-  .header-inside .nav-and-social .main-nav {
-    display: block;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .header-inside .nav-and-social .main-nav {
     display: block;
   }
@@ -147,14 +151,7 @@ body {
   font-size: 20px;
 }
 
-@media (max-width: 479px) {
-  .header-inside .nav-and-social .main-nav a {
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .header-inside .nav-and-social .main-nav a {
     display: block;
     margin-bottom: 20px;
@@ -171,17 +168,9 @@ body {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  height: 90px;
 }
 
-@media (max-width: 479px) {
-  .header-inside .nav-and-social .social {
-    -ms-grid-column-align: normal;
-        justify-self: normal;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 991px) {
   .header-inside .nav-and-social .social {
     -ms-grid-column-align: normal;
         justify-self: normal;
@@ -191,8 +180,6 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   .header-inside .nav-and-social .social {
     margin-top: 20px;
-    -ms-grid-column-align: normal;
-        justify-self: normal;
   }
 }
 
@@ -204,5 +191,46 @@ body {
 
 .header-inside .nav-and-social .social a:hover {
   color: #6c6c6c;
+}
+
+.medicare-plan-options {
+  height: 640px;
+  background: url(../images/Layer_10_doctor.jpg) center;
+  background-size: cover;
+}
+
+.medicare-plan-options .medicare-plan-options-wrap {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.medicare-plan-options .medicare-plan-options-wrap .medicare-plan-options_title {
+  color: #474747;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: -1.19px;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.medicare-plan-options .medicare-plan-options-wrap .medicare-plan-options_main {
+  color: #3f3f3f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

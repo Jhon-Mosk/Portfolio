@@ -6,9 +6,7 @@
 $textFont: "Open Sans", sans-serif;
 $textColor: #6a6a6a;
 
-$headerFont: "Montserrat Regular", sans-serif;
-$headerFontMedium: "Montserrat Medium", sans-serif;
-$headerFontBold: "Montserrat Bold", sans-serif;
+$headerFont: "Montserrat", sans-serif;
 $headerColor: #6c6c6c;
 $headerHoverColor: #262626;
 $headerMediumColor: #474747;
@@ -47,13 +45,13 @@ $standartGap: 20px;
 
     @media (min-width: 1200px) {
         width: 1200px;
-    }
+    } 
 }
 
-@mixin is-button($_width: 166px, $_height: 47px, $_top-margin: 42px, $_left-margin: auto, $_right-margin: auto, $_bottom-margin: 0) {
+.is-button {
     display: block;
-    width: $_width;
-    height: $_height;
+    width: 166px;
+    height: 47px;
     box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
     background-color: #1a9bdc;
     color: #ffffff;
@@ -66,7 +64,7 @@ $standartGap: 20px;
     line-height: 47px;
     text-align: center;
     border-radius: 25px;
-    margin: $_top-margin $_left-margin $_bottom-margin $_right-margin;
+    margin: 42px auto 0;
 
     &:hover {
         background-color: #37c3a8;
