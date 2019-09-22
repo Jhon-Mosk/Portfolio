@@ -488,6 +488,18 @@ body {
   }
 }
 
+@media (max-width: 479px) {
+  .statistics .statistics-unit:last-child {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .statistics .statistics-unit:last-child {
+    margin-bottom: 50px;
+  }
+}
+
 .statistics .statistics-unit img {
   height: 80px;
 }

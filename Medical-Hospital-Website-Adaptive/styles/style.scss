@@ -351,6 +351,15 @@ body {
             margin-top: 50px;
         }
 
+        &:last-child {
+            @include respondTo(phones) {
+                margin-bottom: 50px;
+            }
+    
+            @include respondTo(wide-phones) {
+                margin-bottom: 50px;
+            }            
+        }
 
         img {
             height: 80px;
