@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700|Open+Sans:400,700&display=swap');
+
+@import "variables";
+
+body {
+    margin: 0;
+}
+
+.header-inside {
+    
+    .logo-and-contact {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 35px 0;     
+        grid-gap: 20px;
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        } 
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: repeat(2, 1fr);
+        } 
+
+        @include respondTo(tablets) {
+            grid-template-columns: repeat(2, 1fr);
+        } 
+        
+        .logo {
+            
+            @media (max-width: 1440px) {
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+        }
+
+        .top-line {
+            font-weight: 700;
+        }
+
+        .contactUnitWrap {
+            min-height: 51px;
+            padding-left: 70px;
+            color: $textColor;
+            font-family: $textFont;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        .work-time {
+            background: url(../images/clock.png) no-repeat left;
+        }
+
+        .mail {
+            background: url(../images/mail.png) no-repeat left;
+        }
+
+        .phone {
+            background: url(../images/phone.png) no-repeat left;
+        }
+    }
+
+    .nav-and-social {
+        min-height: 36px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 2px solid #c2c2c2;
+        margin: 0 10px;
+        padding: 30px 0;
+
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+        } 
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
+
+            a {
+                color: $headerColor;
+                font-family: "Nexa Bold", sans-serif;
+                font-size: 20px;
+
+                @media (max-width: 767px) {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                &:hover {
+                    color: $headerHoverColor;
+                }
+            }
+
+        }
+
+        .social {
+            justify-self: end;
+            align-self: end;
+
+            @media (max-width: 991px) {
+                justify-self: normal;
+            }
+
+            @include respondTo(tablets) {
+                margin-top: 20px;
+            }
+
+            a {
+                color: $iconsColor;
+                font-size: 23px;
+                letter-spacing: 23px;
+
+                &:hover {
+                    color: $headerColor;
+                }
+            }
+        }
+    }
+}
+
+.medicare-plan-options {
+    height: 640px;
+    background: url(../images/Layer_10_doctor.jpg) center;
+    background-size: cover;
+
+    .medicare-plan-options-wrap {
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;        
+
+        .medicare-plan-options_title {
+            color: $headerMediumColor;
+            font-family: $headerFont;
+            font-weight: 500;
+            font-size: 48px;
+            letter-spacing: -1.19px;
+            text-align: center;
+            margin-bottom: 37px;
+        }
+
+        .medicare-plan-options_main {
+            color: #3f3f3f;
+            font-family: $textFont;
+            font-size: 17px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respondTo(tablets) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respondTo(sm-desktops) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .benefits-unit {
+        box-sizing: border-box;
+        padding: 75px 62px 57px;
+        text-align: center;
+
+        &:nth-child(1) {
+            background-color: #43b1d2;
+        }
+
+        &:nth-child(2) {
+            background-color: #3fb6c6;
+        }
+
+        &:nth-child(3) {
+            background-color: #3cbbbb;
+        }
+
+        &:nth-child(4) {
+            background-color: #37c3a8;
+        }
+
+    }
+
+    .benefits-description-wrap {
+        color: $lightColor;
+
+        .benefits-title {
+            font-family: $headerFont;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -1.82px;
+            margin: 24px 0 23px;
+        }
+
+        .benefits-main {
+            font-family: $textFont;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+}
+
+.why-choose-us {
+
+    .why-choose-us-title {
+        color: #494949;
+        font-family: $headerFont;
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        margin: 110px 0 30px;
+    }
+
+    .why-choose-us-main {
+        color: $textColor;
+        font-family: $textFont;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .why-choose-us-wrap {
+        display: grid;
+        grid-template-columns: 1fr 337px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 57px;
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr; 
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr; 
+        }
+
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr; 
+        }
+
+        .why-choose-us-unit {
+            margin-top: 95px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                height: 75px;
+                width: 75px;
+                margin-bottom: 20px;
+            }
+
+            .unit-title {
+                color: #6f6f6e;
+                font-family: $headerFont;
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: -1.82px;
+                text-align: center;
+                margin-bottom: 43px;
+            }
+
+            .unit-main {
+                color: $textColor;
+                font-family: $textFont;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        .woman-doctor {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            align-self: end;
+
+            @include respondTo(phones) {
+                width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                justify-self: center;
+            }
+
+            @include respondTo(wide-phones) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                justify-self: center;
+            }
+
+            @include respondTo(tablets) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                justify-self: center;
+            }
+        }
+    }
+}
+
+.statistics {
+    min-height: 595px;
+    background: url(../images/Layer_9.png);
+    background-color: #0087be;
+    background-blend-mode: multiply;
+
+    .container {
+        align-items: center;
+        min-height: inherit;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr; 
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr 1fr; 
+        }
+    }
+
+    .statistics-unit {        
+        text-align: center;
+        color: $lightColor;
+        font-family: $headerFont;
+        font-weight: 500;
+
+        @include respondTo(phones) {
+            margin-top: 50px;
+        }
+
+        @include respondTo(wide-phones) {
+            margin-top: 50px;
+        }
+
+        &:last-child {
+            @include respondTo(phones) {
+                margin-bottom: 50px;
+            }
+    
+            @include respondTo(wide-phones) {
+                margin-bottom: 50px;
+            }            
+        }
+
+        img {
+            height: 80px;
+        }
+
+        .statistics-figures {
+            font-size: 60px;
+            letter-spacing: -1.19px;
+        }
+
+        .statistics-line {
+            margin: 26px auto;
+            height: 6px;
+            width: 84px;
+            background-color: $lightColor;
+        }
+
+        .statistics-value {
+            font-size: 25px;
+            letter-spacing: -1.52px;
+        }
+    }
+
+}
+
+.work {
+
+    .work-wrap {
+        padding-top: 100px;
+        height: 895px;
+        display: grid;
+        grid-template-columns: 715px 425px;
+        grid-gap: 55px;
+        justify-content: center;
+        align-content: baseline;
+        color: #6a6a6a;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        @include respondTo(sm-desktops) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .work-title {
+        color: #494949;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 38px;
+    }
+
+    .how-we-work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 40px;
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr;
+        }
+
+        @include respondTo(sm-desktops) {
+            margin-bottom: 50px;
+        }
+
+        .how-we-work-description {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            @include respondTo(phones) {
+                grid-column-end: 2;
+            }
+
+            @include respondTo(wide-phones) {
+                grid-column-end: 2;
+            }
+        }
+
+        .work-signature {
+            margin-top: 35px;
+            color: #6f6f6e;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: -1.21px;
+        }
+
+        .work-date-and-author {
+            margin-bottom: 25px;
+            color: #0087be;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: -0.38px;
+        }
+
+        .is-button {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            @include respondTo(phones) {
+                grid-column-end: 2; 
+            }
+
+            @include respondTo(wide-phones) {
+                grid-column-end: 2; 
+            }
+        }
+
+        .is-resize {
+            width: 154px;
+            height: 43px;
+            font-size: 17px;
+        }
+    }
+
+    .our-creative {
+
+        a {
+            text-decoration: none;
+        }
+
+        .is-margin {
+            margin-bottom: 50px;
+        }
+
+        .heart-treatment {
+            width: 422px;
+            height: 54px;
+            background-color: #e2e2e2;
+            border-radius: 30px;
+            margin: 6px 0;
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            align-items: center;
+            grid-gap: 20px;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0 6px;
+
+            @include respondTo(phones) {
+                width: 70%;
+                margin: 6px auto;
+            }
+
+            @include respondTo(wide-phones) {
+                margin: 6px auto;
+            }
+
+            @include respondTo(tablets) {
+                margin: 6px auto;
+            }
+
+            @include respondTo(sm-desktops) {
+                margin: 6px auto;
+            }
+
+            &:hover {
+                background-color: #0087be;
+            }
+
+            .circle {
+                width: 40px;
+                height: 40px;
+                background: #ffffff;
+                text-align: center;
+                font-size: 10px;
+                color: #0087be;
+                line-height: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
