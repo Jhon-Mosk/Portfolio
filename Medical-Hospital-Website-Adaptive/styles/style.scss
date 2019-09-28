@@ -589,102 +589,6 @@ body {
         }
     }
 }
-    
-
-//         .work-signature {
-//             margin-top: 35px;
-//             color: #6f6f6e;
-//             font-family: 'Montserrat', sans-serif;
-//             font-size: 20px;
-//             font-weight: 500;
-//             letter-spacing: -1.21px;
-//         }
-
-//         .work-date-and-author {
-//             margin-bottom: 25px;
-//             color: #0087be;
-//             font-family: 'Montserrat', sans-serif;
-//             font-size: 15px;
-//             font-weight: 500;
-//             letter-spacing: -0.38px;
-//         }
-
-//         .is-button {
-//             grid-column-start: 1;
-//             grid-column-end: 3;
-
-//             @include respondTo(phones) {
-//                 grid-column-end: 2; 
-//             }
-
-//             @include respondTo(wide-phones) {
-//                 grid-column-end: 2; 
-//             }
-//         }
-
-        
-//     }
-
-//     .our-creative {
-
-//         a {
-//             text-decoration: none;
-//         }
-
-//         .is-margin {
-//             margin-bottom: 50px;
-//         }
-
-//         .heart-treatment {
-//             width: 422px;
-//             height: 54px;
-//             background-color: #e2e2e2;
-//             border-radius: 30px;
-//             margin: 6px 0;
-//             display: grid;
-//             grid-template-columns: 40px 1fr;
-//             align-items: center;
-//             grid-gap: 20px;
-//             color: #ffffff;
-//             font-family: 'Montserrat', sans-serif;
-//             font-size: 20px;
-//             font-weight: 500;
-//             padding: 0 6px;
-
-//             @include respondTo(phones) {
-//                 width: 70%;
-//                 margin: 6px auto;
-//             }
-
-//             @include respondTo(wide-phones) {
-//                 margin: 6px auto;
-//             }
-
-//             @include respondTo(tablets) {
-//                 margin: 6px auto;
-//             }
-
-//             @include respondTo(sm-desktops) {
-//                 margin: 6px auto;
-//             }
-
-//             &:hover {
-//                 background-color: #0087be;
-//             }
-
-//             .circle {
-//                 width: 40px;
-//                 height: 40px;
-//                 background: #ffffff;
-//                 text-align: center;
-//                 font-size: 10px;
-//                 color: #0087be;
-//                 line-height: 40px;
-//                 border-radius: 50%;
-//             }
-//         }
-//     }
-// }
 
 .gallery {
     // height: 825px;
@@ -693,7 +597,7 @@ body {
     background-blend-mode: color-burn;
     background-size: cover;
     color: #ffffff;
-    padding: 94px 240px;
+    padding: 94px 0;
     box-sizing: border-box;
     
     .gallery-wrap {
@@ -701,8 +605,20 @@ body {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 35px;
 
+        img {
+            width: 100%;
+        }
+
         @include respondTo(phones) {
             grid-template-columns: 1fr;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -716,6 +632,14 @@ body {
 
         @include respondTo(phones) {
             grid-column-end: 2;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-column-end: 3;
+        }
+
+        @include respondTo(tablets) {
+            grid-column-end: 3;
         }
 
         .gallery-title {
