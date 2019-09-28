@@ -733,7 +733,7 @@ body {
   background-color: #38b69e;
   background-blend-mode: color-burn;
   background-size: cover;
-  color: #ffffff;
+  color: #fff;
   padding: 94px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -801,9 +801,85 @@ body {
 }
 
 .gallery .gallery-description .gallery-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 38px;
+}
+
+.our-team {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding: 145px 0;
+}
+
+.our-team .our-team-description {
+  color: #6a6a6a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 85px;
+}
+
+.our-team .our-team-description .our-team-title {
+  color: #494949;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.our-team .our-team-unit-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+@media (max-width: 479px) {
+  .our-team .our-team-unit-wrap {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .our-team .our-team-unit-wrap {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.our-team .our-team-unit-wrap .our-team-unit {
+  color: #6f6f6e;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 480px) {
+  .our-team .our-team-unit-wrap .our-team-unit img {
+    width: 100%;
+  }
+}
+
+.our-team .our-team-unit-wrap .our-team-unit .doctor-name {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 30px 0 15px;
+}
+
+.our-team .our-team-unit-wrap .our-team-unit .doctor-function {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -1.09px;
+  margin-bottom: 30px;
+}
+
+.our-team .our-team-unit-wrap .our-team-unit a {
+  text-decoration: none;
+  color: #0087be;
+  font-size: 25px;
+  letter-spacing: 12.8px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -591,12 +591,11 @@ body {
 }
 
 .gallery {
-    // height: 825px;
     background: url(../images/Layer_3.jpg) no-repeat center center;
     background-color: #38b69e;
     background-blend-mode: color-burn;
     background-size: cover;
-    color: #ffffff;
+    color: $lightColor;
     padding: 94px 0;
     box-sizing: border-box;
     
@@ -623,7 +622,7 @@ body {
     }
 
     .gallery-description {
-        font-family: "Open Sans", sans-serif;
+        font-family: $textFont;
         font-size: 16px;
         line-height: 30px;
         text-align: center;
@@ -643,10 +642,77 @@ body {
         }
 
         .gallery-title {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $headerFont;
             font-size: 45px;
             font-weight: 700;
             margin-bottom: 38px;
+        }
+    }
+}
+
+.our-team {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 145px 0;
+
+    .our-team-description {
+        color: $textColor;
+        font-family: $textFont;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 85px;
+
+        .our-team-title {
+            color: #494949;
+            font-family: $headerFont;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+    }
+
+    .our-team-unit-wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .our-team-unit {
+            color: #6f6f6e;
+            font-family: $headerFont;
+
+            @media (min-width: 480px) {
+                img {
+                    width: 100%;
+                }                
+            }
+
+            .doctor-name {
+                font-size: 25px;
+                font-weight: 500;
+                margin: 30px 0 15px;
+            }
+
+            .doctor-function {
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: -1.09px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0087be;
+                font-size: 25px;
+                letter-spacing: 12.8px;
+            }
         }
     }
 }
