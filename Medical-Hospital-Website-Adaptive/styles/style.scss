@@ -764,7 +764,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 80px;
-        font-family: "Open Sans", sans-serif;
+        font-family: $textFont;
 
         @include respondTo(phones) {
             grid-template-columns: 1fr;
@@ -820,7 +820,7 @@ footer {
 
                 a {
                     text-decoration: none;
-                    color: #ffffff;
+                    color: $lightColor;
                 }
             }
         }
@@ -848,10 +848,10 @@ footer {
             line-height: 24px;
             letter-spacing: 0.55px;
             color: #7f7f7f;
-            font-family: "Open Sans", sans-serif;
+            font-family: $textFont;
 
             form {
-                @media (max-width: 767px) {
+                @media (max-width: 991px) {
                     display: grid;
                 }
             }
@@ -860,7 +860,7 @@ footer {
             textarea {
                 border: none;
                 border-bottom: 3px solid #7f7f7f;
-                font-family: "Open Sans", sans-serif;
+                font-family: $textFont;
                 color: #7f7f7f;
                 font-size: 16px;
                 letter-spacing: 0.4px;
@@ -893,7 +893,7 @@ footer {
         }
 
         .footer-title {
-            color: #ffffff;
+            color: $lightColor;
             font-size: 22px;
             font-weight: 700;
             line-height: 24px;
@@ -902,4 +902,14 @@ footer {
             opacity: unset;
         }
     }
+}
+
+.copyrights {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #615555;
+    font-family: $textFont;
+    font-size: 13px;
+    line-height: 115px;
+    letter-spacing: 0.33px;
 }

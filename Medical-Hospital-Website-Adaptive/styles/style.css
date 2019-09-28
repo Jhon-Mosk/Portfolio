@@ -1010,7 +1010,7 @@ footer .footer-inside .get-in-touch .footer-social {
 
 footer .footer-inside .get-in-touch .footer-social a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 footer .footer-inside .quick-links a,
@@ -1037,7 +1037,7 @@ footer .footer-inside .enquiry-form {
   font-family: "Open Sans", sans-serif;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   footer .footer-inside .enquiry-form form {
     display: -ms-grid;
     display: grid;
@@ -1081,12 +1081,22 @@ footer .footer-inside .enquiry-form .is-button .is-resize {
 }
 
 footer .footer-inside .footer-title {
-  color: #ffffff;
+  color: #fff;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.55px;
   margin-bottom: 70px;
   opacity: unset;
+}
+
+.copyrights {
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #615555;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 115px;
+  letter-spacing: 0.33px;
 }
 /*# sourceMappingURL=style.css.map */
