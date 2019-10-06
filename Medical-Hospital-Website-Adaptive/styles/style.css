@@ -41,6 +41,14 @@
   background-color: #37c3a8;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 body {
   margin: 0;
 }
@@ -191,6 +199,13 @@ body {
 
 .header-inside .nav-and-social .social a:hover {
   color: #6c6c6c;
+}
+
+.header-inside .nav-and-social .social a:hover i {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .medicare-plan-options {
@@ -751,6 +766,13 @@ body {
   width: 100%;
 }
 
+.gallery .gallery-wrap img:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 @media (max-width: 479px) {
   .gallery .gallery-wrap {
     -ms-grid-columns: 1fr;
@@ -1011,6 +1033,13 @@ footer .footer-inside .get-in-touch .footer-social {
 footer .footer-inside .get-in-touch .footer-social a {
   text-decoration: none;
   color: #fff;
+}
+
+footer .footer-inside .get-in-touch .footer-social a:hover i {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 footer .footer-inside .quick-links a,

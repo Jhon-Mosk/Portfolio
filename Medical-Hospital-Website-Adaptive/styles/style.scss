@@ -120,6 +120,11 @@ body {
 
                 &:hover {
                     color: $headerColor;
+
+                    i {
+                        transform: scale(1.5, 1.5);
+                        transition-duration: 0.5s;
+                    }
                 }
             }
         }
@@ -606,6 +611,11 @@ body {
 
         img {
             width: 100%;
+
+            &:hover {
+                transform: scale(2, 2);
+                transition-duration: 1s;                
+            }
         }
 
         @include respondTo(phones) {
@@ -821,6 +831,13 @@ footer {
                 a {
                     text-decoration: none;
                     color: $lightColor;
+
+                    &:hover {
+                        i {
+                            transform: scale(1.5, 1.5);
+                            transition-duration: 0.5s;
+                        }
+                    }
                 }
             }
         }
