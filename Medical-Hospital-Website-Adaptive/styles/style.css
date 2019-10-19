@@ -35,10 +35,14 @@
   text-align: center;
   border-radius: 25px;
   margin: 42px auto 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .is-button:hover {
   background-color: #37c3a8;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .hidden {
@@ -210,8 +214,72 @@ body {
 
 .medicare-plan-options {
   height: 640px;
-  background: url(../images/Layer_10_doctor.jpg) center;
+  background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
   background-size: cover;
+  -webkit-animation: medical-care 30s linear infinite 0s;
+          animation: medical-care 30s linear infinite 0s;
+}
+
+@-webkit-keyframes medical-care {
+  0% {
+    background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  16% {
+    background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  33% {
+    background: url(../images/medicarePlan-2.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  49% {
+    background: url(../images/medicarePlan-2.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  66% {
+    background: url(../images/medicarePlan-3.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  81% {
+    background: url(../images/medicarePlan-3.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  100% {
+    background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@keyframes medical-care {
+  0% {
+    background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  16% {
+    background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  33% {
+    background: url(../images/medicarePlan-2.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  49% {
+    background: url(../images/medicarePlan-2.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  66% {
+    background: url(../images/medicarePlan-3.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  81% {
+    background: url(../images/medicarePlan-3.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  100% {
+    background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+    background-size: cover;
+  }
 }
 
 .medicare-plan-options .medicare-plan-options-wrap {
@@ -520,6 +588,11 @@ body {
   height: 80px;
 }
 
+.statistics .statistics-unit img:hover {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+          animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
 .statistics .statistics-unit .statistics-figures {
   font-size: 60px;
   letter-spacing: -1.19px;
@@ -762,15 +835,76 @@ body {
   grid-gap: 35px;
 }
 
-.gallery .gallery-wrap img {
-  width: 100%;
+.gallery .gallery-wrap .gallery-unit {
+  width: 344px;
+  height: 209px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  position: relative;
 }
 
-.gallery .gallery-wrap img:hover {
-  -webkit-transform: scale(2, 2);
-          transform: scale(2, 2);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+.gallery .gallery-wrap .gallery-unit:hover .gallery-inside {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.gallery .gallery-wrap .gallery-unit:hover img {
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.gallery .gallery-wrap img {
+  width: inherit;
+  height: inherit;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.gallery .gallery-wrap .gallery-inside {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  text-align: justify;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43b1d2+0,37c3a8+100 */
+  background: #43b1d2;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#43b1d2), to(#37c3a8));
+  background: linear-gradient(to right, #43b1d2 0%, #37c3a8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#43b1d2', endColorstr='#37c3a8', GradientType=1);
+  /* IE6-9 */
+}
+
+@media (max-width: 1200px) {
+  .gallery .gallery-wrap .gallery-unit {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 479px) {
@@ -877,6 +1011,61 @@ body {
 .our-team .our-team-unit-wrap .our-team-unit {
   color: #6f6f6e;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.our-team .our-team-unit-wrap .our-team-unit img {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+@media (min-width: 1200px) {
+  .our-team .our-team-unit-wrap .our-team-unit:hover img {
+    visibility: hidden;
+    -webkit-transform: translateY(-200px) scale(0, 0);
+            transform: translateY(-200px) scale(0, 0);
+  }
+}
+
+.our-team .our-team-unit-wrap .our-team-unit .team-unit-back {
+  position: absolute;
+  visibility: hidden;
+  width: 279px;
+  height: 279px;
+  border-radius: 50%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43b1d2+0,37c3a8+100 */
+  background: #43b1d2;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#43b1d2), to(#37c3a8));
+  background: linear-gradient(to right, #43b1d2 0%, #37c3a8 100%);
+  /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43b1d2',            endColorstr='#37c3a8',GradientType=1 );
+  /* IE6-9 */
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-team .our-team-unit-wrap .our-team-unit .team-unit-back .restyle-button {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.32px;
 }
 
 @media (min-width: 480px) {
@@ -903,6 +1092,14 @@ body {
   color: #0087be;
   font-size: 25px;
   letter-spacing: 12.8px;
+}
+
+@media (min-width: 1200px) {
+  .our-team .our-team-unit-wrap .our-team-unit:hover .team-unit-back {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
 }
 
 .new-patient {
