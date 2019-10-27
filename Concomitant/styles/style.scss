@@ -3,6 +3,7 @@
 
 @import "blocks/header";
 @import "blocks/logoAndSlogan";
+@import "blocks/socials";
 
 html, body {
     min-height: 100%;
@@ -16,7 +17,7 @@ body {
 
 .topLine {
     height: 5px;
-    color: $majorColor;
+    background: $majorColor;
     margin: 0 -15px;
 }
 
