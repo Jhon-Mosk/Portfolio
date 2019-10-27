@@ -1,0 +1,33 @@
+@import "../packages/bootstrap-4.3.1/scss/bootstrap.scss";
+@import "variables";
+
+@import "blocks/header";
+@import "blocks/logoAndSlogan";
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: $mainFont;
+    color: $grayDark;
+    background: #1f1f1f;
+}
+
+.topLine {
+    height: 5px;
+    color: $majorColor;
+    margin: 0 -15px;
+}
+
+.container {
+    background: $lightestColor;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-down(xs) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
