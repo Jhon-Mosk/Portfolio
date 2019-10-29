@@ -1,0 +1,34 @@
+.b-copyrights {
+    min-height: 60px;
+    background-color: #2e2e2e;
+    color: $grayLight;
+    line-height: 60px;
+    padding: 0 15px;
+
+    &_cancelPadding {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    &__left {
+
+        &_decor {
+            float: left;
+
+            @include media-breakpoint-down(sm) {
+                float: none;
+            }
+        }     
+    }
+
+    &__right {
+
+        &_decor {
+            float: right;
+
+            @include media-breakpoint-down(sm) {
+                float: none;
+            }
+        }
+    }
+}
