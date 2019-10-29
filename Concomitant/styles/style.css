@@ -10797,6 +10797,52 @@ a.text-dark:hover, a.text-dark:focus {
           box-shadow: 0 0 1px #e6e6e6;
 }
 
+.b-properties_topMargin {
+  margin-top: 50px;
+}
+
+.b-propertyUnit {
+  text-align: center;
+}
+
+.b-propertyUnit__icon {
+  font-size: 6rem;
+}
+
+@media (max-width: 767.98px) {
+  .b-propertyUnit__icon_topMargin {
+    margin-top: 15px;
+  }
+}
+
+.b-propertyUnit__icon_users {
+  color: #c45f4b;
+}
+
+.b-propertyUnit__icon_globe {
+  color: #cf9d41;
+}
+
+.b-propertyUnit__icon_cogs {
+  color: #3d5f12;
+}
+
+.b-propertyUnit__icon_leaf {
+  color: #7da3b7;
+}
+
+.b-propertyUnit__head {
+  padding: 20px;
+  color: #81b300;
+  font-size: 18px;
+}
+
+.b-propertyUnit__desc {
+  font-size: 13px;
+  color: #999999;
+  padding: 0 5px;
+}
+
 html, body {
   min-height: 100%;
 }
