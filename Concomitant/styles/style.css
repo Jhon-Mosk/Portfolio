@@ -10776,6 +10776,27 @@ a.text-dark:hover, a.text-dark:focus {
   outline: none;
 }
 
+.b-mainPageSliderWrap {
+  padding: 30px;
+  background: #f2f2f2;
+}
+
+.b-mainPageSliderWrap_cancelPadding {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.b-mainPageSliderWrap_bottomBorder {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.b-mainPageSliderWrap__slider {
+  padding: 10px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 1px #e6e6e6;
+          box-shadow: 0 0 1px #e6e6e6;
+}
+
 html, body {
   min-height: 100%;
 }
