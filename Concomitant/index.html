@@ -7,7 +7,7 @@
     <title>Concomitant</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
               integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-              crossorigin="anonymous">
+              crossorigin="anonymous" SameSite=None>
     <link rel="stylesheet" href="packages/bootstrap-4.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -46,7 +46,21 @@
                 <a class="b-loginNav__item" href="#">Archived News</a>
             </div>
         </div>
-        <div class="b-mainNav"></div>
+
+        <div class="b-mainNav b-mainNav_cancelPadding">
+            <div class="b-mainNav__items">
+                <a href="#" class="b-mainNav__item">Home page</a>
+                <a href="#" class="b-mainNav__item">Style demo</a>
+                <a href="#" class="b-mainNav__item">Full width</a>
+                <a href="#" class="b-mainNav__item">Portfolio</a>
+                <a href="#" class="b-mainNav__item">Gallery</a>
+                <a href="#" class="b-mainNav__item">Dropdown</a>
+            </div>
+            <form class="b-siteSearch b-siteSearch_topMargin">
+                <input class="b-siteSearch__field b-siteSearch__field_left" type="text" placeholder="Search Our Website">
+                <button class="b-siteSearch__btn">Search</button>
+            </form>
+        </div>
     </div> 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
