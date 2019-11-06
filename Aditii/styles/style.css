@@ -1,5 +1,69 @@
-@font-face : BebasNeue Regular,
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url(../Fonts/BebasNeue-Regular.ttf);
+}
 
+@font-face {
+  font-family: "Lobster Regular";
+  src: url(../Fonts/Lobster-1.4.ttf);
+}
 
-$gray: #a1a1a1;
+.b-header {
+  height: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.b-logo {
+  font-family: "Lobster Regular", sans-serif;
+  color: #3cc395;
+  font-size: 49px;
+}
+
+.b-siteSearch {
+  width: 438px;
+}
+
+@media (max-width: 575.98px) {
+  .b-siteSearch_widthSm {
+    width: 100%;
+  }
+}
+
+.b-siteSearch__field {
+  width: 100%;
+  outline: none;
+  border: 1px solid #e3e3e3;
+  background: url(../images/loupe.png) no-repeat 98% center;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 35px;
+}
+
+.b-basket {
+  background: url(../images/basket.png) no-repeat left;
+  height: 37px;
+  padding-left: 50px;
+  font-size: 33px;
+  font-family: "Bebas Neue Regular", sans-serif;
+  color: #a1a1a1;
+  line-height: 37px;
+}
+
+@media (max-width: 767.98px) {
+  .b-basket_topMargin {
+    margin-top: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
