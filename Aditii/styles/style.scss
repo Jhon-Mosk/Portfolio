@@ -3,3 +3,11 @@
 @import "blocks/logo";
 @import "blocks/siteSearch";
 @import "blocks/basket";
+@import "blocks/nav";
+
+.container {
+
+    @media (min-width: 1200px) {
+        max-width: 1280px;
+    }    
+}
