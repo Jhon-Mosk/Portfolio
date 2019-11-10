@@ -482,6 +482,11 @@
   color: #a1a1a1;
 }
 
+.b-copyrights {
+  height: 50px;
+  background: #2da89b;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1280px;
