@@ -1,0 +1,40 @@
+.b-sliderAboutProduct {
+    grid-column-start: 4;
+    grid-column-end: 6;
+
+    &__title {
+        font-family: $titleFont;
+        font-size: 61px;
+        color: $textColor;
+        line-height: 0.885;          
+    }
+
+    &__desc {
+        font-size: 17px;
+        font-family: $mainFont;
+        color: $textColor;
+        line-height: 1.647;
+
+        &_margin {
+            margin: 30px 0;
+        }
+    }
+
+    &__btn {
+        background: transparent;
+        border: 3px solid white;
+        border-radius: 5px;
+        color: $textColor;
+        font-size: 27px;
+        font-family: $titleFont;
+        line-height: 0.704;        
+        width: 137px;
+        height: 44px;
+        transition-duration: 0.5s;
+
+        &:hover {
+            color: $gray;
+            border: 3px solid $gray;
+        }
+    }
+}

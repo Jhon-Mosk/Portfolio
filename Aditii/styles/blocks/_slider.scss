@@ -1,0 +1,11 @@
+.b-slider {
+    background: $mainBackColor;
+    min-height: 445px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+
+    &__img {
+        grid-column-start: 2;
+    }
+}  
