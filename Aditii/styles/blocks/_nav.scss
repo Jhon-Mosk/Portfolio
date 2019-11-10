@@ -5,12 +5,19 @@
     background: $navColor;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 
     &_padding {
 
         @media (min-width: 1200px) {
-            padding: 0 150px;            
+            padding: 0 150px;
+        }
+    }
+
+    &_marginTop {
+
+        @media (max-width: 767.98px) {
+            margin-top: 10px;
         }
     }
 
