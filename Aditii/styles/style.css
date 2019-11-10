@@ -328,6 +328,16 @@
   text-decoration: none;
 }
 
+.b-featuredProducts {
+  background: #3cbfb3;
+  font-size: 31px;
+  font-family: "Bebas Neue Regular", sans-serif;
+  color: #ffffff;
+  line-height: 0.806;
+  text-transform: uppercase;
+  padding: 25px 186px;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1280px;
