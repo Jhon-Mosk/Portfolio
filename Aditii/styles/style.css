@@ -330,6 +330,12 @@
   padding: 25px 186px;
 }
 
+@media (max-width: 767.98px) {
+  .b-featuredProducts {
+    padding: 25px;
+  }
+}
+
 .b-brandName {
   font-size: 27px;
   font-family: "Bebas Neue Regular", sans-serif;
@@ -415,6 +421,65 @@
   .b-productWrap {
     padding: 50px 32px;
   }
+}
+
+.b-footer {
+  min-height: 340px;
+  background: #3cbfb3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 186px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+  .b-footer {
+    padding: 40px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .b-footer {
+    padding: 40px;
+  }
+}
+
+.b-footer__title {
+  font-size: 27px;
+  font-family: "Bebas Neue Regular", sans-serif;
+  color: #ffffff;
+  line-height: 0.926;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .b-footer__title {
+    margin-top: 20px;
+  }
+}
+
+.b-footer__link {
+  display: block;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  line-height: 1.867;
+}
+
+.b-footer__link:hover {
+  text-decoration: none;
+  color: #a1a1a1;
 }
 
 @media (min-width: 1200px) {
