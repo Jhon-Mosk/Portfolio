@@ -1,0 +1,15 @@
+.carousel-control{
+
+&-prev-icon {
+    background-image: url(../images/brand/angle-left-solid.svg);
+    width: 30px;
+    height: 88px;
+}
+
+&-next-icon {
+    background-image: url(../images/brand/angle-right-solid.svg);
+    width: 30px;
+    height: 88px;
+}
+
+}

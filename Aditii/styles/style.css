@@ -230,6 +230,104 @@
   border: 3px solid #a1a1a1;
 }
 
+.b-brandNav {
+  min-height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media (max-width: 1200px) {
+  .b-brandNav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.b-brandNav__item {
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .b-brandNav__item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.b-brandNav__item_border {
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
+
+.b-brandNav__img {
+  height: 151px;
+}
+
+.b-brandNav__wrapText {
+  padding: 50px 0;
+  width: 80px;
+}
+
+.b-brandNav__name {
+  font-size: 27px;
+  font-family: "Bebas Neue Regular", sans-serif;
+  color: #a1a1a1;
+  line-height: 0.926;
+  margin-bottom: 20px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../images/brand/angle-left-solid.svg);
+  width: 30px;
+  height: 88px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/brand/angle-right-solid.svg);
+  width: 30px;
+  height: 88px;
+}
+
+.shopBtn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Bebas Neue Regular", sans-serif;
+  font-size: 19px;
+  line-height: 1;
+  background: #3cc395;
+  padding: 9px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.shopBtn:hover {
+  color: #3cc395;
+  background: #ffffff;
+  text-decoration: none;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1280px;
