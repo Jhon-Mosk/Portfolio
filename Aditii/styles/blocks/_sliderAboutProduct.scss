@@ -12,7 +12,15 @@
         font-family: $titleFont;
         font-size: 61px;
         color: $textColor;
-        line-height: 0.885;
+        line-height: 0.885; 
+        
+        @media (max-width: 575.98px) {
+            height: 106px;
+        }
+
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            height: 160px;
+        }
 
         &_tablets {
             
@@ -26,7 +34,15 @@
         font-size: 17px;
         font-family: $mainFont;
         color: $textColor;
-        line-height: 1.647;
+        line-height: 1.647; 
+        
+        @media (max-width: 575.98px) {
+            height: 81px;
+        }
+
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            height: 135px;
+        }        
 
         &_tablets {
             
