@@ -1,0 +1,29 @@
+.b-slider {
+    background: $mainBackColor;
+    min-height: 445px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+
+    @media (max-width: 575.98px) {
+        display: block;
+    }
+
+    @media (max-width: 1199.98px) {
+        padding: 50px;
+    }
+
+    @media (max-width: 991.98px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 50px;
+    }
+
+    &__img {
+        grid-column-start: 2;
+
+        @media (max-width: 575.98px) {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}  

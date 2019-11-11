@@ -1,0 +1,21 @@
+.b-productItem {
+    width: 255px;
+    height: 255px;
+    border: 2px solid $lightGray;
+    border-bottom: 5px solid $buttonAndLogoColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        height: 125px;
+    }
+
+    &__priceAndBtnWrap {
+        min-width: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
