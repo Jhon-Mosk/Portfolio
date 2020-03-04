@@ -1,12 +1,3 @@
-<?php function check_mobile_device() { 
-    $mobile_agent_array = array('ipad', 'iphone', 'android', 'pocket', 'palm', 'windows ce', 'windowsce', 'cellphone', 'opera mobi', 'ipod', 'small', 'sharp', 'sonyericsson', 'symbian', 'opera mini', 'nokia', 'htc_', 'samsung', 'motorola', 'smartphone', 'blackberry', 'playstation portable', 'tablet browser');
-    $agent = strtolower($_SERVER['HTTP_USER_AGENT']);    
-    foreach ($mobile_agent_array as $value) {    
-        if (strpos($agent, $value) !== false) return true;   
-    };     
-    return false; 
-};?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,14 +24,9 @@
         <a href="https://vk.com/jhon_mosk" target="_blank"><i class="fab fa-vk"></i></a>
         <a href="https://www.instagram.com/evgenypolitiko/?hl=ru" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="mailto:jhon-mosk@yandex.ru" target="_blank"><i class="far fa-envelope"></i></a>
-        <? if(check_mobile_device()) :?>
-            <a href="viber://add?number=79027077785"><i class="fab fa-viber"></i></a>               
-        <? else : ?>
-            <a title="Должен быть устоновлен Viber для ПК" href="viber://chat?number=+79027077785"><i class="fab fa-viber"></i></a>
-        <? endif; ?>
-        <!-- <i href="viber://add?number=79027077785" target="_blank"><i class="fab fa-viber"></i></a> -->
+        <a href="viber://add?number=79027077785" target="_blank"><i class="fab fa-viber"></i></a>
         <a href="https://wa.me/79027077785" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="tg://resolve?domain=Jhon_Mosk" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+        <a href="tg://resolve?domain=@Jhon_Mosk" target="_blank"><i class="fab fa-telegram-plane"></i></a>
     </div>
 </body>
 </html>
