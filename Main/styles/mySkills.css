@@ -1,0 +1,54 @@
+body {
+  background: url(../img/moon.webp) no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: auto;
+    background-position: center top;
+  }
+}
+
+body .navigation {
+  text-align: right;
+  margin: 30px 100px;
+}
+
+@media (max-width: 800px) {
+  body .navigation {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+body .navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+body .navigation a:hover {
+  border-bottom: solid 5px;
+}
+
+.mySkills {
+  margin: 13vw auto;
+  width: 33vw;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .mySkills {
+    width: 55vw;
+  }
+}
+
+.mySkills img {
+  width: 6rem;
+  margin: 5px;
+}
+/*# sourceMappingURL=mySkills.css.map */

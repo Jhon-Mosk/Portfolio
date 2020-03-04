@@ -1,62 +1,21 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SURFHOUSE</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900|Roboto:400,700,900" rel="stylesheet">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="packages/bootstrap-3.4.1-dist/css/bootstrap.min.css">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="Styles/style.css">
 </head>
 
 <body>
   <div class="header">
-    <div class="container">
-      <nav class="navbar navbar-default xsNavBar visible-xs">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand xsLogo" href="#">SURFHOUSE</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="">About</a></li>
-              <li><a href="">apparel</a></li>
-              <li><a href="">surf apparel</a></li>
-              <li><a href="">windsurf</a></li>
-              <li><a href="">kitesurf</a></li>
-              <li><a href="">accessories</a></li>
-              <li><a href="">sale</a></li>
-              <li><a href="">brands</a></li>
-              <li><a href="">blog</a></li>
-              <li><a href="">Gadgets</a></li>
-              <li><a href="">cantact</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      <a href="index.html" class="logo hidden-xs"></a>
+    <div class="headerContainer">
+      <a href="index.html" class="logo"></a>
       <div class="socialIcons">
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -77,10 +36,10 @@
       <a href="" class="buy">buy now</a>
     </div>
   </div>
-  <div class="container content">
-    <div class="row">
-      <div class="contentLeft col-lg-3 col-md-4 col-sm-4">
-        <div class=" hidden-xs">
+  <div class="content">
+    <div class="contentConteiner">
+      <div class="contentFlex">
+        <div class="contentLeft">
           <div class="contentLeftMenu">Menu</div>
           <a href="">About</a>
           <a href="">apparel</a>
@@ -93,310 +52,254 @@
           <a href="">blog</a>
           <a href="">Gadgets</a>
           <a href="">cantact</a>
+          <div class="open">Now<br> is<br> open!</div>
         </div>
-        <div class="open">Now<br> is<br> open!</div>
-      </div>
-      <div class="col-lg-9 col-sm-8">
-        <div class="contentHeader newProductsHeader">New products</div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 productUnitCol">
+        <div class="contentRight">
+          <div class="contentHeader">New products</div>
+          <div class="productsWrap">
             <div class="productUnit productUnitNew">
               <img class="productImg" src="images/products/surf1.jpg" alt="surf1">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  Single Thruster 2014
-                </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;865.00
-                  </div>
+              <div class="productName">
+                Single Thruster 2014
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 865.00
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit productUnitHot">
               <img class="productImg" src="images/products/surf2.jpg" alt="surf2">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  Freestyle Wave FSW
+              <div class="productName">
+                Freestyle Wave FSW
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 770.50
                 </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;770.50
-                  </div>
-                  <div class="oldPrice">
-                    &euro;&nbsp;1,270.15
-                  </div>
+                <div class="oldPrice">
+                  &euro; 1,270.15
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit">
               <img class="productImg" src="images/products/surf3.jpg" alt="surf3">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  The White Collection
-                  SURFBOARD 2014
+              <div class="productName">
+                The White Collection
+                SURFBOARD 2014
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 1,580.70
                 </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;1,580.70
-                  </div>
-                </div>
+
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit">
               <img class="productImg" src="images/products/surf4.jpg" alt="surf4">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  OG SCALLOP SOLID
-                </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;765.00
-                  </div>
+              <div class="productName">
+                OG SCALLOP SOLID
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 765.00
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit">
               <img class="productImg" src="images/products/surf5.jpg" alt="surf5">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  STRIPE 19 QS
-                </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;230.50
-                  </div>
+              <div class="productName">
+                STRIPE 19 QS
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 230.50
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit">
               <img class="productImg" src="images/products/surf6.jpg" alt="surf6">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  YOKE 19 QS
-                </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;1,130.70
-                  </div>
+              <div class="productName">
+                YOKE 19 QS
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 1,130.70
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="contentHeader">top Products</div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 productUnitCol">
+          <div class="contentHeader">top Products</div>
+          <div class="productsWrap">
             <div class="productUnit">
               <img class="productImg" src="images/products/springsuit1.jpg" alt="springsuit1">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  Ushingham
-                  Lightning 2014
+              <div class="productName">
+                Ushingham
+                Lightning 2014
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 2,960.95
                 </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;2,960.95
-                  </div>
-                  <div class="oldPrice">
-                    &euro;&nbsp;3,100.15
-                  </div>
+                <div class="oldPrice">
+                  &euro; 3,100.15
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit">
               <img class="productImg" src="images/products/springsuit2.jpg" alt="springsuit2">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  CYPHER HEAT VES M
-                </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;849.95
-                  </div>
+              <div class="productName">
+                CYPHER HEAT VES M
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 849.95
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit">
               <img class="productImg" src="images/products/springsuit3.jpg" alt="springsuit3">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  SYNCRO WOMENS
-                  QS M
-                </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;1,110.99
-                  </div>
+              <div class="productName">
+                SYNCRO WOMENS
+                QS M
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 1,110.99
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="contentHeader">sale Products</div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 productUnitCol">
+          <div class="contentHeader">sale Products
+          </div>
+          <div class="productsWrap saleProducts">
             <div class="productUnit">
               <img class="productImg" src="images/products/rashguard.jpg" alt="rashguard">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  SYNCRO MENS QS M
+              <div class="productName">
+                SYNCRO MENS QS M
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 249.95
                 </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;249.95
-                  </div>
-                  <div class="oldPrice">
-                    &euro;&nbsp;450.15
-                  </div>
+                <div class="oldPrice">
+                  &euro; 450.15
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit">
               <img class="productImg" src="images/products/springsuit2.jpg" alt="springsuit2">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  RAMOS - SHIRT FOR MEN
+              <div class="productName">
+                RAMOS - SHIRT FOR MEN
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 459.65
                 </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;459.65
-                  </div>
-                  <div class="oldPrice">
-                    &euro;&nbsp;570.65
-                  </div>
+                <div class="oldPrice">
+                  &euro; 570.65
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 productUnitCol">
             <div class="productUnit">
               <img class="productImg" src="images/products/springsuit3.jpg" alt="springsuit3">
-              <div class="nameAndPriceWrap">
-                <div class="productName">
-                  SixSixOne Evo Wired Full Face
+              <div class="productName">
+                SixSixOne Evo Wired Full Face
+              </div>
+              <div class="productPriceWrap">
+                <div class="actualPrice">
+                  &euro; 240.00
                 </div>
-                <div class="productPriceWrap">
-                  <div class="actualPrice">
-                    &euro;&nbsp;240.00
-                  </div>
-                  <div class="oldPrice">
-                    &euro;&nbsp;370.65
-                  </div>
+                <div class="oldPrice">
+                  &euro; 370.65
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="container-fluid">
-        <div class="brands">
-          <img src="images/brands/Bic-surf_1.jpg" alt="">
-          <img src="images/brands/CBC_1.jpg" alt="">
-          <img src="images/brands/Channel-Islands_2.jpg" alt="">
-          <img src="images/brands/Cortez_1.jpg" alt="">
-          <img src="images/brands/Firewire_1.jpg" alt="">
-          <img src="images/brands/Haydenshapes_1.jpg" alt="">
-          <img src="images/brands/Lost.jpg" alt="">
-          <img class="hidden-md" src="images/brands/Nine-Plus_1.jpg" alt="">
+      <div class="brands">
+        <img src="images/brands/Bic-surf_1.jpg" alt="">
+        <img src="images/brands/CBC_1.jpg" alt="">
+        <img src="images/brands/Channel-Islands_2.jpg" alt="">
+        <img src="images/brands/Cortez_1.jpg" alt="">
+        <img src="images/brands/Firewire_1.jpg" alt="">
+        <img src="images/brands/Haydenshapes_1.jpg" alt="">
+        <img src="images/brands/Lost.jpg" alt="">
+        <img src="images/brands/Nine-Plus_1.jpg" alt="">
+      </div>
+      <div class="istagramFeedWrap">
+        <div class="instaFeedHead">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram feed:</span> #surfhouse
+        </div>
+        <div class="instaFeedImages">
+          <img src="images/instaFeed/1.jpg" alt="">
+          <img src="images/instaFeed/2.jpg" alt="">
+          <img src="images/instaFeed/3.jpg" alt="">
+          <img src="images/instaFeed/4.jpg" alt="">
+          <img src="images/instaFeed/5.jpg" alt="">
+          <img src="images/instaFeed/6.jpg" alt="">
         </div>
       </div>
-    </div>
-    <div class="instagramFeedWrap">
-      <div class="instaFeedHead">
-        <i class="fab fa-instagram"></i>
-        <span>Instagram feed:</span> #surfhouse
+      <div class="socialButtonsWrap">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.pinterest.ru/" target="_blank">
+          <i class="fab fa-pinterest"></i>
+        </a>
       </div>
-      <div class="instaFeedImages">
-        <img src="images/instaFeed/1.jpg" alt="">
-        <img src="images/instaFeed/2.jpg" alt="">
-        <img src="images/instaFeed/3.jpg" alt="">
-        <img src="images/instaFeed/4.jpg" alt="">
-        <img src="images/instaFeed/5.jpg" alt="">
-        <img src="images/instaFeed/6.jpg" alt="">
-      </div>
-    </div>
-    <div class="socialButtonsWrap">
-      <a href="https://www.facebook.com/" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://twitter.com/" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://www.pinterest.ru/" target="_blank">
-        <i class="fab fa-pinterest"></i>
-      </a>
     </div>
   </div>
   <div class="footer">
-    <div class="container footerInside">
+    <div class="footerInside">
       <div>
-        <div class="footerColumn">
-          <div class="columnHead">
-            Category
-          </div>
-          <div class="columnLinks">
-            <a href="#">Home</a>
-            <a href="#">about us</a>
-            <a href="#">eshop</a>
-            <a href="#">Features</a>
-            <a href="#">new collections</a>
-            <a href="#">blog</a>
-            <a href="#">contact</a>
-          </div>
+        <div class="columnHead">
+          Category
+        </div>
+        <div class="columnLinks">
+          <a href="#">Home</a>
+          <a href="#">about us</a>
+          <a href="#">eshop</a>
+          <a href="#">Features</a>
+          <a href="#">new collections</a>
+          <a href="#">blog</a>
+          <a href="#">contact</a>
         </div>
       </div>
       <div>
-        <div class="footerColumn">
-          <div class="columnHead">
-            Our Account
-          </div>
-          <div class="columnLinks">
-            <a href="#">Your Account</a>
-            <a href="#">Personal information</a>
-            <a href="#">Addresses</a>
-            <a href="#">Discount</a>
-            <a href="#">Orders history</a>
-            <a href="#">Addresses</a>
-            <a href="#">Search Terms</a>
-          </div>
+        <div class="columnHead">
+          Our Account
+        </div>
+        <div class="columnLinks">
+          <a href="#">Your Account</a>
+          <a href="#">Personal information</a>
+          <a href="#">Addresses</a>
+          <a href="#">Discount</a>
+          <a href="#">Orders history</a>
+          <a href="#">Addresses</a>
+          <a href="#">Search Terms</a>
         </div>
       </div>
       <div>
-        <div class="footerColumn">
-          <div class="columnHead">
-            Our Support
-          </div>
-          <div class="columnLinks">
-            <a href="#">Site Map</a>
-            <a href="#">Search Terms</a>
-            <a href="#">Advanced Search</a>
-            <a href="#">Mobile</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Mobile</a>
-            <a href="#">Addresses</a>
-          </div>
+        <div class="columnHead">
+          Our Support
+        </div>
+        <div class="columnLinks">
+          <a href="#">Site Map</a>
+          <a href="#">Search Terms</a>
+          <a href="#">Advanced Search</a>
+          <a href="#">Mobile</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Mobile</a>
+          <a href="#">Addresses</a>
         </div>
       </div>
-      <div class="footerColumn newsLetter">
+      <div class="newsLetter">
         <div class="columnHead">
           Newsletter
         </div>
@@ -416,7 +319,7 @@
           </div>
         </div>
       </div>
-      <div class="footerColumn about">
+      <div class="about">
         <div class="columnHead">
           About Us
         </div>
@@ -436,11 +339,10 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="footerCopyrights">
-      <div class="container copyrightsInside">
+    <div class="footerCopyrights">
+      <div class="copyrightsInside">
         <div class="footerCopySign">
-          &copy; 2014 SURFHOUSE. All rights reserved <span class="hidden-xs">-</span><br class="visible-xs"> Designed by theuncreativelab.com
+          &copy; 2014 SURFHOUSE. All rights reserved - Designed by theuncreativelab.com
         </div>
         <div class="footerSocials">
           <i class="fab fa-facebook-f"></i>
@@ -453,12 +355,7 @@
         </div>
       </div>
     </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-    crossorigin="anonymous"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="packages/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  </div>
 </body>
 
 </html>

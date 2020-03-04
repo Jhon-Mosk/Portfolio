@@ -1,0 +1,79 @@
+body {
+  background: url(../img/moon.webp) no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: auto;
+    background-position: center top;
+  }
+}
+
+body .navigation {
+  text-align: right;
+  margin: 30px 100px;
+}
+
+@media (max-width: 800px) {
+  body .navigation {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+body .navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+body .navigation a:hover {
+  border-bottom: solid 5px;
+}
+
+.wrapAbout {
+  margin-top: 13vw;
+  text-align: center;
+}
+
+.wrapAbout .title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wrapAbout .author {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.wrapAbout .description {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.wrapAbout .description-select {
+  color: #0300c7;
+}
+
+.wrapAbout a .fab, .wrapAbout .far {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #0300c7;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.wrapAbout a .fab:hover, .wrapAbout .far:hover {
+  color: #5304bb;
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+/*# sourceMappingURL=index.css.map */

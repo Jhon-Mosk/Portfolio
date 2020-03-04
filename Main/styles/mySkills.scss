@@ -1,0 +1,16 @@
+@import "global";
+
+.mySkills {
+    margin: 13vw auto;
+    width: 33vw;
+    text-align: center;
+
+    @media (max-width: 1000px) {
+        width: 55vw;
+    }
+    
+    img {
+        width: 6rem;
+        margin: 5px;
+    }
+}
