@@ -1,13 +1,18 @@
 @import "global";
 
 .wrapAbout {
-    margin-top: 13vw;    
+    margin: 13vw auto;    
     text-align: center;
+    width: 100%;
 
     .title {
        font-size: 4rem;
        font-weight: bold;
        text-transform: uppercase;
+
+       @media (max-width: 450px) {
+        font-size: 3rem;
+       }
     }
 
     .author {

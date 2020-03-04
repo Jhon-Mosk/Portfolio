@@ -37,14 +37,21 @@ body .navigation a:hover {
 }
 
 .wrapAbout {
-  margin-top: 13vw;
+  margin: 13vw auto;
   text-align: center;
+  width: 100%;
 }
 
 .wrapAbout .title {
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media (max-width: 450px) {
+  .wrapAbout .title {
+    font-size: 3rem;
+  }
 }
 
 .wrapAbout .author {
