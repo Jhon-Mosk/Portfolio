@@ -23,6 +23,7 @@ body .navigation {
 }
 
 body .navigation a {
+  display: inline-block;
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
