@@ -17,13 +17,12 @@ body .navigation {
 
 @media (max-width: 800px) {
   body .navigation {
-    margin-top: 30px;
+    margin: 30px auto;
     text-align: center;
   }
 }
 
 body .navigation a {
-  display: inline-block;
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
@@ -75,13 +74,70 @@ body .navigation a:hover {
   font-size: 2rem;
   margin: 0 10px;
   color: #0300c7;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .wrapAbout a .fab:hover, .wrapAbout .far:hover {
   color: #5304bb;
-  -webkit-transform: scale(2, 2);
-          transform: scale(2, 2);
+  transform: scale(2, 2);
 }
-/*# sourceMappingURL=index.css.map */
+
+body {
+  background-attachment: fixed;
+}
+
+body .portfolioItemWrap {
+  margin: 0 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1000px) {
+  body .portfolioItemWrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+body .portfolioItem {
+  border: solid 10px #ffffff;
+}
+
+body .portfolioItem img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+body .portfolioItemMain {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media (max-width: 1000px) {
+  body .portfolioItemMain {
+    grid-column-end: 2;
+  }
+}
+
+body {
+  background-attachment: fixed;
+}
+
+.mySkills {
+  margin: 13vw auto;
+  width: 33vw;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .mySkills {
+    width: 55vw;
+  }
+}
+
+.mySkills img {
+  width: 6rem;
+  margin: 5px;
+}
+/*# sourceMappingURL=style.css.map */

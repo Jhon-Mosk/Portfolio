@@ -5,19 +5,18 @@ body {
     @media (max-width: 1000px) {
         background-size: auto;
         background-position: center top;
-    }    
+    }  
     
     .navigation {
         text-align: right;
         margin: 30px 100px;
 
         @media (max-width: 800px) {
-            margin-top: 30px;
+            margin: 30px auto;
             text-align: center;
         }             
 
-        a {
-            display: inline-block;
+        a {            
             text-decoration: none;
             color: #ffffff;
             font-size: 1rem;
