@@ -1,0 +1,25 @@
+@import "variables";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/siteSearch";
+@import "blocks/basket";
+@import "blocks/nav";
+@import "blocks/slider";
+@import "blocks/carousel-indicators";
+@import "blocks/sliderAboutProduct";
+@import "blocks/brandNav";
+@import "blocks/carousel-control";
+@import "blocks/shopBtn";
+@import "blocks/featuredProducts";
+@import "blocks/brandName";
+@import "blocks/productItem";
+@import "blocks/productWrap";
+@import "blocks/footer";
+@import "blocks/copyrights";
+
+.container {
+
+    @media (min-width: 1200px) {
+        max-width: 1280px;
+    }    
+}

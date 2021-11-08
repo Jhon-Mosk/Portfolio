@@ -1,0 +1,115 @@
+body {
+    background-attachment: fixed;
+
+    .portfolioItemWrap {
+        margin: 0 10px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .portfolioItem {
+        border: solid 10px #ffffff;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+
+        &__order {
+            &-0{
+                order: 0;
+            }
+
+            &-1{
+                order: 1;
+            }
+            
+            &-2{
+                order: 2;
+            }
+
+            &-3{
+                order: 3;
+            }
+
+            &-4{
+                order: 4;
+            }
+
+            &-5{
+                order: 5;
+            }
+
+            &-6{
+                order: 6;
+            }
+
+            &-7{
+                order: 7;
+            }
+
+            &-8{
+                order: 8;
+            }
+
+            &-9{
+                order: 9;
+            }
+
+            &-10{
+                order: 10;
+            }
+
+            &-11{
+                order: 11;
+            }
+            
+            &-12{
+                order: 12;
+            }
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: 510px;
+            object-fit: cover;
+
+            @media (max-width: 1000px) {
+                height: 380px;
+            }
+        }
+
+        &_desc {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1.3em;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .portfolioItemBig {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 1.5em;
+
+        img {
+            height: 750px;
+
+            @media (max-width: 1000px) {
+                height: 380px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            grid-column-end: 2;
+            font-size: 1.3em;
+        }
+    }
+}

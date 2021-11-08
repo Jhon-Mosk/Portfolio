@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E43YVG0S8J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E43YVG0S8J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="рефинансирование, выгода, калькулятор">
+    <meta name="description" content="Позволит посчитать Вам выгоду рефинансирования">
+    <meta name="googlebot" content="all" />
+    <meta name="yandex" content="all" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.4/math.js"></script>
+    <title>Рефинансирование. Выгодно ли?</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(70791661, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/70791661" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body id="main">
+    <div class="container">
+        <div class="contentWrap">
+            <h1>Рефинансирование</h1>
+            <h2>Выгодно ли?</h2>
+            <form method="POST" onsubmit="return false">
+                <div class="formInner" id="innerForm">
+                    <div class="debtWrap">
+                        <h3>давайте ПОСЧИТАЕМ ...</h3>
+                        <label for="sumDebt">остаток задолженности по Кредиту</label>
+                        <input id="sumDebt" pattern="\d{0,11}(,\d{0,2})?" type="text" autofocus required
+                            placeholder="дробную часть вводите через точку">
+                        <label for="percentDebt">годовая процентная ставка (в процентах годовых)</label>
+                        <input id="percentDebt" pattern="\d{0,2}(.\d{0,2})?" type="text" required
+                            placeholder="например: 11.9">
+                        <label for="startDebtDate">дата открытия кредита</label>
+                        <input class="startDateDebt" id="startDebtDate" type="date" required
+                            min="fifty_years_before_current_date" max="current_date_block">
+                        <label for="debtDate">дата последнего платежа</label>
+                        <input class="dateDebt" id="debtDate" type="date" required min="current_date_block"
+                            max="fifty_years_after_current_date">
+                    </div>
+                    <div class="delimeter"></div>
+                    <div class="offerWrap">
+                        <h3 class="offerTitle">а Что предлагают ?..</h3>
+                        <label for="sumOffer">Сумма</label>
+                        <input id="sumOffer" pattern="\d{0,11}(.\d{0,2})?" type="text" required
+                            placeholder="дробную часть вводите через точку">
+                        <label for="percentOffer">годовая процентная ставка (в процентах годовых)</label>
+                        <input id="percentOffer" pattern="\d{0,2}(.\d{0,2})?" type="text" required
+                            placeholder="например: 11.9">
+                        <label for="offerDate">дата последнего платежа</label>
+                        <input class="dateOffer" id="offerDate" type="date" required min="current_date_block"
+                            max="fifty_years_after_current_date">
+                    </div>
+                </div>
+                <div class="benefitWrap" id="wrapBenefit">
+                    <div class="benefitWrapTitle">Выгода:</div>
+                    <div id="benefit"></div>
+                    <div id="phrase"></div>
+                </div>
+                <button id="calcOffer" type="submit">Узнать</button>
+                <button id="calcOfferRepeat" type="submit">Ещё раз?</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="calc.js"></script>
+</body>
+
+</html>

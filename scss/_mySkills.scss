@@ -1,0 +1,21 @@
+body {
+    background-attachment: fixed;
+}
+
+.mySkills {
+    margin: 13vw auto;
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 1000px) {
+        width: 55vw;
+    }
+    
+    img {
+        width: 6rem;
+        margin: 5px;
+    }
+}

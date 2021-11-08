@@ -1,0 +1,41 @@
+body {
+    background: url(../img/moon.webp) no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+
+    @media (max-width: 1000px) {
+        background-size: auto;
+        background-position: center top;
+    }
+}
+
+.navigation {
+    text-align: right;
+    margin: 30px 100px;
+
+    @media (max-width: 800px) {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+        margin: 0 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+
+        &:hover {
+            border-bottom: solid 5px;
+        }
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}

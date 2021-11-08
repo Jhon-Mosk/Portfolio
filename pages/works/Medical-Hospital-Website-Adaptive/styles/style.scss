@@ -1,0 +1,1072 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700|Open+Sans:400,700&display=swap');
+
+@import "variables";
+
+body {
+    margin: 0;
+}
+
+.header-inside {
+
+    .logo-and-contact {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 35px 0;
+        grid-gap: 20px;
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respondTo(tablets) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .logo {
+
+            @media (max-width: 1440px) {
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+        }
+
+        .top-line {
+            font-weight: 700;
+        }
+
+        .contactUnitWrap {
+            min-height: 51px;
+            padding-left: 70px;
+            color: $textColor;
+            font-family: $textFont;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        .work-time {
+            background: url(../images/clock.png) no-repeat left;
+        }
+
+        .mail {
+            background: url(../images/mail.png) no-repeat left;
+        }
+
+        .phone {
+            background: url(../images/phone.png) no-repeat left;
+        }
+    }
+
+    .nav-and-social {
+        min-height: 36px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 2px solid #c2c2c2;
+        margin: 0 10px;
+        padding: 30px 0;
+
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
+
+            a {
+                color: $headerColor;
+                font-family: "Nexa Bold", sans-serif;
+                font-size: 20px;
+
+                @media (max-width: 767px) {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                &:hover {
+                    color: $headerHoverColor;
+                }
+            }
+
+        }
+
+        .social {
+            justify-self: end;
+            align-self: end;
+
+            @media (max-width: 991px) {
+                justify-self: normal;
+            }
+
+            @include respondTo(tablets) {
+                margin-top: 20px;
+            }
+
+            a {
+                color: $iconsColor;
+                font-size: 23px;
+                letter-spacing: 23px;
+
+                &:hover {
+                    color: $headerColor;
+
+                    i {
+                        transform: scale(1.5, 1.5);
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.medicare-plan-options {
+    height: 640px;
+    background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+    background-size: cover;
+    animation: medical-care 30s linear infinite 0s;
+
+    @keyframes medical-care {
+        0% {
+            background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        16% {
+            background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        33% {
+            background: url(../images/medicarePlan-2.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        49% {
+            background: url(../images/medicarePlan-2.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        66% {
+            background: url(../images/medicarePlan-3.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        81% {
+            background: url(../images/medicarePlan-3.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        100% {
+            background: url(../images/Layer_10_doctor.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    .medicare-plan-options-wrap {
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .medicare-plan-options_title {
+            color: $headerMediumColor;
+            font-family: $headerFont;
+            font-weight: 500;
+            font-size: 48px;
+            letter-spacing: -1.19px;
+            text-align: center;
+            margin-bottom: 37px;
+        }
+
+        .medicare-plan-options_main {
+            color: #3f3f3f;
+            font-family: $textFont;
+            font-size: 17px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respondTo(tablets) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respondTo(sm-desktops) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .benefits-unit {
+        box-sizing: border-box;
+        padding: 75px 62px 57px;
+        text-align: center;
+
+        &:nth-child(1) {
+            background-color: #43b1d2;
+        }
+
+        &:nth-child(2) {
+            background-color: #3fb6c6;
+        }
+
+        &:nth-child(3) {
+            background-color: #3cbbbb;
+        }
+
+        &:nth-child(4) {
+            background-color: #37c3a8;
+        }
+
+    }
+
+    .benefits-description-wrap {
+        color: $lightColor;
+
+        .benefits-title {
+            font-family: $headerFont;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -1.82px;
+            margin: 24px 0 23px;
+        }
+
+        .benefits-main {
+            font-family: $textFont;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+}
+
+.why-choose-us {
+
+    .why-choose-us-title {
+        color: #494949;
+        font-family: $headerFont;
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        margin: 110px 0 30px;
+    }
+
+    .why-choose-us-main {
+        color: $textColor;
+        font-family: $textFont;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .why-choose-us-wrap {
+        display: grid;
+        grid-template-columns: 1fr 337px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 57px;
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr;
+        }
+
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .why-choose-us-unit {
+            margin-top: 95px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                height: 75px;
+                width: 75px;
+                margin-bottom: 20px;
+            }
+
+            .unit-title {
+                color: #6f6f6e;
+                font-family: $headerFont;
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: -1.82px;
+                text-align: center;
+                margin-bottom: 43px;
+            }
+
+            .unit-main {
+                color: $textColor;
+                font-family: $textFont;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        .woman-doctor {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            align-self: end;
+
+            @include respondTo(phones) {
+                width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                justify-self: center;
+            }
+
+            @include respondTo(wide-phones) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                justify-self: center;
+            }
+
+            @include respondTo(tablets) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                justify-self: center;
+            }
+        }
+    }
+}
+
+.statistics {
+    min-height: 595px;
+    background: url(../images/Layer_9.png);
+    background-color: #0087be;
+    background-blend-mode: multiply;
+
+    .container {
+        align-items: center;
+        min-height: inherit;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .statistics-unit {
+        text-align: center;
+        color: $lightColor;
+        font-family: $headerFont;
+        font-weight: 500;
+
+        @include respondTo(phones) {
+            margin-top: 50px;
+        }
+
+        @include respondTo(wide-phones) {
+            margin-top: 50px;
+        }
+
+        &:last-child {
+            @include respondTo(phones) {
+                margin-bottom: 50px;
+            }
+
+            @include respondTo(wide-phones) {
+                margin-bottom: 50px;
+            }
+        }
+
+        img {
+            height: 80px;
+
+            &:hover {
+                animation: heartbeat 1.5s ease-in-out infinite both;
+            }
+        }
+
+        .statistics-figures {
+            font-size: 60px;
+            letter-spacing: -1.19px;
+        }
+
+        .statistics-line {
+            margin: 26px auto;
+            height: 6px;
+            width: 84px;
+            background-color: $lightColor;
+        }
+
+        .statistics-value {
+            font-size: 25px;
+            letter-spacing: -1.52px;
+        }
+    }
+
+}
+
+.works-and-creative {
+
+    .works-and-creative-inside {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        padding-top: 100px;
+        grid-template-areas:
+            "worksHead worksHead ourCreativeHead"
+            "worksDesc worksDesc creativeDesc"
+            "worksUnit1 worksUnit2 heartTreatment"
+            "worksData1 worksData2 heartTreatmentPoints"
+            "readMoreWrap readMoreWrap ."
+        ;
+
+        @media (max-width: 990px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "worksHead worksHead"
+                "worksDesc worksDesc"
+                "ourCreativeHead ourCreativeHead"
+                "creativeDesc creativeDesc"
+                "worksUnit1 worksUnit2"
+                "worksData1 worksData2"
+                "heartTreatment heartTreatmentPoints"
+                "readMoreWrap readMoreWrap"
+            ;
+        }
+
+        @media (max-width: 746px) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "worksHead"
+                "worksDesc"
+                "ourCreativeHead"
+                "creativeDesc"
+                "worksUnit1"
+                "worksData1"
+                "worksUnit2"
+                "worksData2"
+                "heartTreatment"
+                "heartTreatmentPoints"
+                "readMoreWrap"
+            ;
+        }
+
+        .works-head {
+            grid-area: worksHead;
+        }
+
+        .works-head,
+        .our-creative-head {
+            font-family: $headerFont;
+            font-weight: 700;
+            font-size: 45px;
+            color: $headerMediumColor;
+        }
+
+        .works-desc {
+            grid-area: worksDesc;
+        }
+
+        .our-creative-head {
+            grid-area: ourCreativeHead;
+        }
+
+        .creative-desc {
+            grid-area: creativeDesc;
+        }
+
+        .works-desc,
+        .creative-desc,
+        .heart-treatment-text,
+        .works-data-text {
+            font-family: $textFont;
+            color: $textColor;
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        .works-unit-1 img,
+        .works-unit-2 img {
+            width: 100%;
+        }
+
+        .works-unit-1 {
+            grid-area: worksUnit1;
+        }
+
+        .works-unit-2 {
+            grid-area: worksUnit2;
+        }
+
+        .heart-treatment {
+            grid-area: heartTreatment;
+
+            .heart-treatment-head {
+                width: 100%;
+                height: 54px;
+                line-height: 54px;
+                color: $headerMediumColor;
+                font-size: 20px;
+                font-family: $headerFont;
+                font-weight: 500;
+                border-radius: 30px;
+                padding-left: 3px;
+                box-sizing: border-box;
+                background-color: #e2e2e2;
+
+                &:hover {
+                    background-color: #0087be;
+                    color: $lightColor;
+                }
+
+                .circle {
+                    margin: 7px;
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    background: #ffffff;
+                    text-align: center;
+                    font-size: 10px;
+                    color: #0087be;
+                    line-height: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .works-data-1 {
+            grid-area: worksData1;
+        }
+
+        .works-data-2 {
+            grid-area: worksData2;
+        }
+
+        .works-data {
+            .works-data-head {
+                font-family: $headerFont;
+                font-weight: 500;
+                color: $headerMediumColor;
+                font-size: 20px;
+            }
+
+            .works-data-date {
+                font-family: $headerFont;
+                color: #0087be;
+                font-size: 15px;
+            }
+        }
+
+        .heart-treatment-points {
+            grid-area: heartTreatmentPoints;
+
+            .treatment-point {
+                width: 100%;
+                height: 54px;
+                line-height: 54px;
+                color: $headerMediumColor;
+                font-size: 20px;
+                font-family: $headerFont;
+                font-weight: 500;
+                border-radius: 30px;
+                padding-left: 3px;
+                box-sizing: border-box;
+                background-color: #e2e2e2;
+                margin-bottom: 12px;
+
+                &:hover {
+                    background-color: #0087be;
+                    color: $lightColor;
+                }
+
+                .circle {
+                    margin: 7px;
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    background: #ffffff;
+                    text-align: center;
+                    font-size: 10px;
+                    color: #0087be;
+                    line-height: 40px;
+                    border-radius: 50%;
+                }
+            }
+
+            .read-more-wrap {
+                grid-area: readMoreWrap;
+                text-align: center;
+
+            }
+        }
+
+        .is-resize {
+            width: 154px;
+            height: 43px;
+            font-size: 17px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.gallery {
+    background: url(../images/Layer_3.jpg) no-repeat center center;
+    background-color: #38b69e;
+    background-blend-mode: color-burn;
+    background-size: cover;
+    color: $lightColor;
+    padding: 94px 0;
+    box-sizing: border-box;
+
+    .gallery-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 35px;
+
+        .gallery-unit {
+            width: 344px;
+            height: 209px;
+            perspective: 500px;
+            position: relative;
+
+            &:hover .gallery-inside {
+                transform: rotateY(0deg);
+                transition-delay: 0.5s;
+            }
+
+            &:hover img {
+                transform: rotateY(-90deg);
+                transition-delay: 0s;
+            }
+        }
+
+        img {
+            width: inherit;
+            height: inherit;
+            transition-duration: 0.5s;
+            transform: rotateY(0deg);
+            transition-timing-function: linear;
+            transition-delay: 0.5s;
+        }
+
+        .gallery-inside {
+            transform: rotateY(90deg);
+            transition-duration: .5s;
+            transition-timing-function: linear;
+            text-align: justify;
+            padding: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: inherit;
+            color: $lightColor;
+            font-family: $textFont;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43b1d2+0,37c3a8+100 */
+            background: rgb(67, 177, 210);
+            /* Old browsers */
+            background: -moz-linear-gradient(left, rgba(67, 177, 210, 1) 0%, rgba(55, 195, 168, 1) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, rgba(67, 177, 210, 1) 0%, rgba(55, 195, 168, 1) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, rgba(67, 177, 210, 1) 0%, rgba(55, 195, 168, 1) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#43b1d2', endColorstr='#37c3a8', GradientType=1);
+            /* IE6-9 */
+        }
+
+        @media (max-width: 1200px) {
+            .gallery-unit {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+            
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .gallery-description {
+        font-family: $textFont;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+        @include respondTo(phones) {
+            grid-column-end: 2;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-column-end: 3;
+        }
+
+        @include respondTo(tablets) {
+            grid-column-end: 3;
+        }
+
+        .gallery-title {
+            font-family: $headerFont;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 38px;
+        }
+    }
+}
+
+.our-team {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 145px 0;
+
+    .our-team-description {
+        color: $textColor;
+        font-family: $textFont;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 85px;
+
+        .our-team-title {
+            color: #494949;
+            font-family: $headerFont;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+    }
+
+    .our-team-unit-wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .our-team-unit {
+            color: #6f6f6e;
+            font-family: $headerFont;
+            position: relative;
+
+            img {
+                transition-duration: 1s;
+            }
+
+            &:hover img {
+
+                @media (min-width: 1200px) {
+                    visibility: hidden;
+                    transform: translateY(-200px) scale(0, 0);                    
+                }
+            }
+
+            .team-unit-back {
+                position: absolute;
+                visibility: hidden;
+                width: 279px;
+                height: 279px;
+                border-radius: 50%;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43b1d2+0,37c3a8+100 */
+                background: rgb(67,177,210); /* Old browsers */
+                background: -moz-linear-gradient(left, rgba(67,177,210,1) 0%, rgba(55,195,168,1) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, rgba(67,177,210,1) 0%,rgba(55,195,168,1) 100%);            /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, rgba(67,177,210,1) 0%,rgba(55,195,168,1) 100%); /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43b1d2',            endColorstr='#37c3a8',GradientType=1 ); /* IE6-9 */
+                transform: scale(0, 0);
+                transition-duration: 1s;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .restyle-button{
+                    color: #ffffff;
+                    font-size: 18px;
+                    letter-spacing: 0.32px;
+                }
+            }
+
+            @media (min-width: 480px) {
+                img {
+                    width: 100%;
+                }
+            }            
+
+            .doctor-name {
+                font-size: 25px;
+                font-weight: 500;
+                margin: 30px 0 15px;
+            }
+
+            .doctor-function {
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: -1.09px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0087be;
+                font-size: 25px;
+                letter-spacing: 12.8px;
+            }
+
+            &:hover .team-unit-back {
+                @media (min-width: 1200px) {
+                    visibility: visible;
+                    transform: scale(1, 1);                    
+                }
+              }
+        }
+    }
+}
+
+.new-patient {
+    padding: 68px 0;
+    background-color: #e2e2e2;
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 0fr;
+        align-items: center;
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    }
+
+    .new-patient-text {
+        color: #494949;
+        font-family: $headerFont;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .is-button {
+        justify-content: right;
+        margin: 0;
+
+        @media (max-width: 767px) {
+            margin: 50px auto 0;
+        }
+    }
+
+    .is-resize {
+        width: 192px;
+        height: 54px;
+        font-size: 21px;
+    }
+}
+
+footer {
+    background-color: #171717;
+    padding: 115px 0;
+    box-sizing: border-box;
+
+    .footer-inside {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 80px;
+        font-family: $textFont;
+
+        @include respondTo(phones) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        @include respondTo(wide-phones) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        @include respondTo(tablets) {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
+
+        a .fas {
+            margin-right: 20px;
+            color: #0087be;
+            font-size: 16px;
+        }
+
+        .get-in-touch {
+            color: #7f7f7f;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+
+            div {
+
+                &:nth-child(2) {
+                    background: url(../images/footer_mail.png) no-repeat left;
+                    padding-left: 83px;
+                    margin-bottom: 50px;
+                }
+
+                &:nth-child(3) {
+                    background: url(../images/footer_phone.png) no-repeat left;
+                    padding-left: 83px;
+                    margin-bottom: 50px;
+                }
+
+                &:nth-child(4) {
+                    background: url(../images/footer_geo.png) no-repeat left;
+                    padding-left: 83px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .footer-social {
+                font-size: 25px;
+                letter-spacing: 18.8px;
+
+                a {
+                    text-decoration: none;
+                    color: $lightColor;
+
+                    &:hover {
+                        i {
+                            transform: scale(1.5, 1.5);
+                            transition-duration: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .quick-links,
+        .our-services {
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #7f7f7f;
+                font-size: 16px;
+                letter-spacing: 0.4px;
+                margin-bottom: 25px;
+
+                &:hover {
+                    color: $lightColor;
+                }
+            }
+        }
+
+        .enquiry-form {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.55px;
+            color: #7f7f7f;
+            font-family: $textFont;
+
+            form {
+                @media (max-width: 991px) {
+                    display: grid;
+                }
+            }
+
+            input,
+            textarea {
+                border: none;
+                border-bottom: 3px solid #7f7f7f;
+                font-family: $textFont;
+                color: #7f7f7f;
+                font-size: 16px;
+                letter-spacing: 0.4px;
+                background: none;
+                margin-bottom: 10px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            input {
+                height: 40px;
+            }
+
+            textarea {
+                height: 110px;
+                resize: none;
+            }
+
+            .is-button {
+                margin: 20px 0;
+
+                .is-resize {
+                    width: 125px;
+                    height: 35px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .footer-title {
+            color: $lightColor;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.55px;
+            margin-bottom: 70px;
+            opacity: unset;
+        }
+    }
+}
+
+.copyrights {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #615555;
+    font-family: $textFont;
+    font-size: 13px;
+    line-height: 115px;
+    letter-spacing: 0.33px;
+}
